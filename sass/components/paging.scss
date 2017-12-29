@@ -1,0 +1,120 @@
+
+.paging {
+    margin: 10px 0 10px 0px;
+	padding: 0;
+	text-align: center;
+}
+
+.paging li {
+    display: inline-block;
+	border: 1px solid rgba(150,150,150,.4);
+}
+
+.paging li a {
+    display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000;
+	opacity: .8;
+}
+
+.paging li a:not(.active):hover {
+    opacity: 1;
+	background-color: rgba(150,150,150,.3);
+}
+
+.paging li a.active,
+.paging li a.active:hover {
+    opacity: 1;
+	font-weight: bold;
+	color: #fff;
+	cursor: default;
+}
+
+.paging.condensed li {
+    float: left;
+}
+
+.paging:after {
+    content:"."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.paging.condensed li {
+    border-right: 0;
+}
+
+.paging.condensed li:last-child {
+   border-right: 1px solid rgba(150,150,150,.4);
+}
+
+.paging-right {
+    display: block;
+	text-align: right;
+}
+
+.paging-center {
+    display: block;
+	text-align: center;
+}
+
+.paging li a.disabled,
+.paging-full li a.disabled {
+	opacity: .3;
+}
+
+.paging li a.disabled:hover,
+.paging-full li a.disabled:hover {
+	background-color: transparent;
+	cursor: default;
+	opacity: .3;
+}
+
+/* Paging Full Width */
+
+.paging-full {
+    margin: 10px 0 10px 0px;
+	padding: 0;
+	width: 100%;
+	border-top: 1px solid green;
+}
+
+.paging-full li {
+	width: 33.3%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.paging-right .paging,
+.paging-center .paging {
+    display: inline-block;
+}
+
+.paging .drop-menu li {
+	border: 0;
+}
+
+select.paging-select {
+	display: inline-block;
+    padding: 8px 8px 8px 8px;
+    border: 0;
+    font-size: calc(.7em + .2vw);
+    color: #333;
+    background-color: #ccc;
+    text-decoration: none;
+    transition: background-color .3s;
+    text-align: center;
+    margin: 3px 0px 3px 0px;
+    box-sizing: border-box;
+    border-radius: .3em;
+    line-height: normal;
+	-webkit-appearance: none;
+}
+
+
+

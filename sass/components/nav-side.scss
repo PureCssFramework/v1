@@ -1,0 +1,433 @@
+
+
+
+.nav-side {
+	display: block;
+	color: #000;	
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #eee;
+	border-bottom: 0;
+	background-color: #fff;
+}
+
+.nav-side a {
+	color: #000;	
+}
+
+.nav-side .nav-side-item label > span.underlined:hover {
+	text-decoration: underline;	
+}
+
+.nav-side-section {
+	height: 50px;
+	line-height: 50px;	
+	padding: 0 0 0 14px;
+}
+
+.nav-side-item {
+	position: relative;	
+}
+.nav-side-item > a {
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	border-bottom: 1px solid #eee;
+	padding: 0 0 0 14px;
+	position: relative;	
+	margin: 0;
+	cursor: pointer;	
+	color: #333;	
+	text-decoration: none;
+}
+
+.nav-side-item a:hover {
+	text-decoration: none;	
+	color: #000;
+	background-color: #eee;
+}
+
+.nav-side-item label {
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	border-bottom: 1px solid #eee;
+	padding: 0 0 0 14px;
+	position: relative;	
+	margin: 0;
+	cursor: pointer;
+}
+
+.nav-side-item label:hover {
+	background-color: #eee;
+	cursor: pointer;	
+}
+
+.nav-side-item label > span,
+.nav-side-item label > a {
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	color: #333;	
+	text-decoration: none;
+}
+
+.nav-side-item label > span:hover,
+.nav-side-item label > a:hover {
+	text-decoration: none;	
+	color: #000;
+}
+
+.nav-side-item label > i {
+	margin: 0;
+	width: 24px;
+}
+
+.nav-side-item label > i.arrow-down {
+	position: absolute;
+	right: 15px;
+	top: 16px;
+	width: 4px;
+	height: 4px;
+	transition: all .2s ease-in-out;
+}
+
+.nav-side-item ul {
+	max-height: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #eee;
+	transition: all .3s ease-in-out;
+	overflow: hidden;	
+}
+
+.nav-side-item li {
+	list-style: none;	
+	padding:0;
+	margin:0;
+}
+
+.nav-side-item li a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding: 0 0 0 20px;
+	position: relative;	
+	margin: 0;
+	color: #000;
+	text-decoration: none;
+	font-size: calc(11px + .1vw);
+}
+
+.nav-side-item li a:hover,
+.nav-side-item li a.active {
+	color: #000;
+	text-decoration: none;
+	background-color: #ddd;	
+}
+
+.nav-side-item > a.active {
+	color: #000;
+	text-decoration: none;
+	background-color: rgba(150,150,150,.1);
+	border-left: 2px solid $primary-color;
+	padding-left: 12px;
+}
+
+.nav-side-item input:checked ~ label {
+	/* Saved for active effects */
+}
+
+
+.nav-side-item input:checked ~ label .arrow-down {
+	top: 18px;
+	transform: rotate(135deg);
+	transition: all .1s ease-in-out;
+}
+
+.nav-side-item input:checked ~ label {
+	background-color: rgba(255,255,255,.1);
+}
+
+.nav-side-item input:checked ~ ul {
+	max-height: 800px;
+	transition: all .3s ease-in-out;
+}
+
+
+/* Dark version */
+
+.nav-side.dark,
+.dark .nav-side {
+	background-color: #111;
+	color: #eee;	
+	border: 1px solid #222;
+}
+
+.nav-side.dark a,
+.dark .nav-side a{
+	color: #eee;	
+}
+
+.nav-side.dark .nav-side-item label > span, 
+.nav-side.dark .nav-side-item label > a,
+.dark .nav-side-item label > span, 
+.dark .nav-side-item label > a{
+	color: #eee;	
+}
+
+.nav-side.dark .nav-side-item a:hover,
+.dark .nav-side-item a:hover{
+	color: #fff;
+	background-color: rgba(255,255,255,.1);
+}
+
+.nav-side.dark .nav-side-item label,
+.dark .nav-side-item label {
+	border-bottom: 1px solid rgba(100,100,100,.1);
+}
+
+.nav-side.dark .nav-side-item label:hover,
+.dark .nav-side-item label:hover {
+	background-color: rgba(255,255,255,.1);
+}
+
+.nav-side.dark .nav-side-item label > span,
+.nav-side.dark .nav-side-item label > a,
+.dark .nav-side-item label > span,
+.dark .nav-side-item label > a{
+	color: #eee;	
+}
+
+.nav-side.dark .nav-side-item label > span:hover,
+.nav-side.dark .nav-side-item label > a:hover,
+.dark .nav-side-item label > span:hover,
+.dark .nav-side-item label > a:hover{	
+	color: #fff;
+}
+
+.nav-side.dark .nav-side-item > a,
+.dark .nav-side-item > a{
+    border-bottom: 1px solid rgba(100,100,100,.1);
+    color: #eee;
+}
+
+.nav-side.dark .nav-side-item ul,
+.dark .nav-side-item ul{
+    background-color: #333;
+}
+
+.dark .nav-side-item i.arrow-down {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.side-nav-responsive .side-menu-options {
+	display: none;
+}
+
+.nav-side.fixed {
+	z-index: 5;
+}
+
+.side-menu-control {
+	display: none;
+}
+
+@media all and (min-width: 1025px) {
+	
+	/* Miniumize .nav-sidebar to just Icons | Only for above 1025px widths */
+	.nav-side_menu:checked ~ .content.showSide.nav-side {
+		border-left: 50px solid #1c1c1c
+	}
+	
+	.nav-side_menu:checked ~ .nav-side_hamburger {
+		background-color: #1c1c1c;
+	}
+
+	.nav-side_menu:checked ~ .nav-side {
+		width: 50px;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item label {
+		padding: 0 0 0 19px;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item:hover label {
+		background-color: #2c2c2c;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-section,
+	.nav-side_menu:checked ~ .nav-side label .arrow-down {
+		display: none;	
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item label > span,
+	.nav-side_menu:checked ~ .nav-side .nav-side-item label > a {
+		position: absolute;
+		left: 50px;
+		top: 0;
+		display: none;
+		width: 200px;
+		background-color: #2c2c2c;
+		padding-left: 10px;
+		padding-left: 20px;
+		box-shadow: 5px 5px 0px rgba(0,0,0,.2);
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item:hover label > span,
+	.nav-side_menu:checked ~ .nav-side .nav-side-item:hover label > a {
+		display: block;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item ul {
+		position: absolute;
+		top: 40px;
+		left: 52px;
+		width: 196px;
+		background-color: #1c1c1c;
+		max-height: 800px;
+		display: none;
+		box-shadow: 5px 5px 0px rgba(0,0,0,.2);
+		transition: all 0s ease-in-out;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item:hover ul {
+		display: block;
+	}
+	
+	.nav-side_menu:checked ~ .nav-side .nav-side-item li a {
+		padding-left: 20px;	
+	}
+	
+	.nav-side_menu:checked ~ .content #main_breadcrumb {
+		margin-left: -50px;
+		padding-left: 45px;
+	}
+
+
+}
+
+@media all and (max-width: 1024px) {
+	
+	/* .nav-side to become slide out */
+	
+	.mobile-side-menu .nav-side_menu:checked ~ .content #main_breadcrumb {
+		margin-left: 0px;
+		padding-left: 5px;
+		position: static;
+	}
+	
+	.mobile-side-menu .content.showSide.nav-side,
+	.mobile-side-menu .nav-side_menu:checked ~ .content.showSide.nav-side {
+		border-left: 0px;
+	}
+	
+	.mobile-side-menu .nav-side_menu:checked ~ .nav-side_hamburger {
+		background-color: #1c1c1c;
+	}
+	
+	.mobile-side-menu .nav-side_menu:checked ~ .nav-side_menu_close {
+		display: block;
+	}
+
+	.mobile-side-menu .nav-side {
+		position: fixed;
+		top: 50px;
+		left: -105%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		min-height: 0;
+		height: calc(100% - 50px);
+		z-index: 91;
+		transition: all .3s ease-in-out;
+		box-shadow: 5px 5px 3px rgba(0,0,0,.2);
+	}
+	
+	.mobile-side-menu .nav-side_menu:checked ~ .nav-side {
+		left: 0%;
+		transition: all .3s ease-in-out;
+	}
+	
+	.mobile-side-menu .content.showSide.nav-side {
+		padding: 50px 15px 0px 15px;	
+	}
+	
+	
+	.side-nav-responsive .side-menu-options {
+		display: block;
+		cursor: pointer;
+		height: 40px;
+		line-height: 40px;
+		border-bottom: 1px solid #eee;
+		font-size: calc(1em + .1vw);
+		padding-left: 10px;
+	}
+	
+	.side-nav-responsive .side-menu-options span {
+		margin : 0px 10px 0px 10px;
+		font-size: calc(13px + .1vw);
+	}
+	
+	.side-menu-items {
+		max-height: 0px;
+		transition: max-height .3s ease-in-out;
+	}
+	
+	.nav-side.side-nav-responsive > input[type=checkbox]:checked  ~ .side-menu-items {
+		max-height: 200px;
+		transition: max-height .3s ease-in-out;
+	}
+	
+	.nav-side.side-nav-responsive > input[type=checkbox]:checked  ~ .side-menu-options i.arrow-down {
+		margin-bottom: 0px;
+		transform: rotate(135deg);
+		transition: all .1s ease-in-out;
+	}
+	
+	.nav-side.fixed {
+		z-index: 25;
+	}
+	
+	.side-menu-items {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		box-shadow:	0px 10px 8px rgba(0,0,0,.3);
+	}
+	
+	#responsive_options:checked ~ .side-menu-control {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+}
+
+
+@media all and (max-width: 500px) {
+
+	.mobile-side-menu .nav-side {
+		width: 66.6%;
+	}
+	
+	.mobile-side-menu .content.showSide.nav-side {
+		padding: 50px 15px 0px 15px;	
+		box-sizing: border-box;
+	}
+	
+}
+
+
+@media all and (max-width: 374px) {
+
+	.mobile-side-menu .nav-side {
+		width: 100%;
+	}
+	
+}
+

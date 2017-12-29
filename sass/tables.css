@@ -1,0 +1,66 @@
+.tbl {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+.tbl td,
+.tbl th {
+  padding: 6px;
+  text-align: left;
+  /* background-color: #fff; */
+  border-bottom: 1px solid rgba(150, 150, 150, 0.1); }
+
+.tbl thead,
+.tbl thead {
+  border-bottom: 2px solid rgba(150, 150, 150, 0.1); }
+
+s
+.tbl tr:last-child td,
+.tbl tr:last-child th {
+  border-bottom: 0; }
+
+.tbl.bordered {
+  border-spacing: 1px;
+  background-color: rgba(150, 150, 150, 0.3);
+  border-collapse: separate; }
+
+.tbl.bordered td {
+  background-color: #fff; }
+
+.tbl.bordered td,
+.tbl.bordered th {
+  border-bottom: 0; }
+
+.tbl.th-bg th {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.tbl.striped-even tr:nth-child(even) td {
+  background-color: rgba(150, 150, 150, 0.1); }
+
+.tbl.striped-odd tr:nth-child(odd) td {
+  background-color: rgba(150, 150, 150, 0.1); }
+
+.tbl.row-hover tr:hover > td,
+.tbl.row-hover tr:hover > th {
+  background-color: #eee; }
+
+.tbl.row-hover thead tr:hover > td,
+.tbl.row-hover thead tr:hover > th {
+  background-color: rgba(150, 150, 150, 0.1); }
+
+.tbl.th-bg.row-hover thead tr:hover > td,
+.tbl.th-bg.row-hover thead tr:hover > th {
+  background-color: #eee; }
+
+@media all and (max-width: 1024px) {
+  .tbl-responsive {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto; }
+
+  .tbl-responsive td,
+  .tbl-responsive th {
+    white-space: nowrap; } }
+
+/*# sourceMappingURL=tables.css.map */

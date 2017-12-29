@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pure CSS Framework: Homepage Layout Example</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta charset="UTF-8">
+
+
+<link rel="stylesheet" type="text/css" href="purecssframework.min.css">
+
+<!-- Use the theme-dark.css to use the dark version of PCF -->
+<!-- <link rel="stylesheet" type="text/css" href="themes/theme-dark.css"> -->
+	
+<!-- PCF site uses Open Sans Google font,add it below if you like it -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
+
+</head>
+
+<!-- Add class "dark" to use dark version -->
+<body class="">
+	
+	<header class="main-container header fixed">
+
+		<!-- Nav Bar with Logo Area -->
+		<div class="flex-grid  navbar">
+
+			<!-- Mobile Menu -->
+			<input type="checkbox" id="mobileMenu" class="hide">
+			<label id="mobileMenuLabel" class="mobile-menu left-side" for="mobileMenu">
+				<i class="hamburger"></i>
+			</label>
+			<label class="full-screen" for="mobileMenu"></label>
+
+			<div class="col-2 logo">
+				Logo
+			</div>
+
+			<nav class="col-10" id="topMenuNav">
+				<div class="navbar-links">
+					<input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					<a href="#">Link 4</a>
+					
+					<div class="has-drop-menu hover-menu">
+						<input type="radio" id="navbarDropLinkSoon" class="drop-menu-input hide" name="navbar-menu">
+						<label for="navbarDropLinkSoon" class="menu-label"></label>
+						Drop Link <i class="arrow-down"></i>
+						<label class="full-screen" for="navbarDropHide"></label>
+						<ul class="drop-menu">
+							<li><a href="#">Drop Link 1</a></li>
+							<li><a href="#">Drop Link 2</a></li>
+							<li><a href="#">Drop Link 3</a></li>
+							<li><a href="#">Drop Link 4</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+		</div>
+		
+	</header>
+	<div class="fixed-nav-space" id="top"></div>
+	
+	
+	<div class="hero-area">
+		<div class="main-container">
+			<div class="flex-grid ">
+				<div class="col-12">
+					<div class="spacer-sm"></div>
+					<h1>Thanks For Dowloading PCF!</h1>
+					<h4>This is a test page using the basic PCF CSS file! </h4>
+					<div class="spacer-sm"></div>
+					<a href="http://www.purecssframework.com" target="_blank" class="btn primary">www.purecssframework.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="main-container">
+	
+		<div class="flex-grid ">
+			<div class="col-12">
+				<div class="flex-grid ">
+					<div class="col-4">
+						<h4>Header 1</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at sodales tellus. Sed finibus lectus dui, quis commodo leo ullamcorper eget. 
+							Pellentesque nibh tortor, ultrices et leo sit amet, mollis aliquet diam. Nunc vitae condimentum justo. Vestibulum sodales rhoncus ex, 
+							condimentum luctus velit laoreet non. Nullam in dictum tortor. Vestibulum pretium ultricies tellus. Proin risus quam, efficitur non sollicitudin 
+							ac, auctor vitae ante. Curabitur ornare lorem felis, ac aliquam ligula facilisis vitae. Donec viverra, mauris et cursus faucibus, odio lectus 
+							faucibus neque, sit amet ultricies orci sapien sed quam.
+						</p>
+						
+					</div>
+					<div class="col-4">
+						<h4>Header 2</h4>
+						<p>
+							Nam ornare felis eu nisi consectetur consequat. Aliquam quis est sed felis rhoncus auctor. Integer consequat tristique ipsum, non placerat orci lacinia a. 
+							Mauris eu laoreet felis, ut ultrices nulla. Phasellus fringilla velit at lorem placerat congue. Donec auctor dui sit amet libero tristique, a maximus est 
+							hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+							egestas. Phasellus laoreet nec nisl quis commodo. 
+						</p>
+					</div>
+					<div class="col-4">
+						<h4>Header 3</h4>
+						<p>
+							Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+							himenaeos. Nulla lacus lectus, sollicitudin et ligula ac, dictum rhoncus eros. Maecenas ac aliquet nunc, a placerat ante. Sed faucibus ligula 
+							ac pretium porta. Etiam eget vestibulum mauris, sit amet viverra dui. Ut viverra vulputate pulvinar.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="text-center">
+		
+		<div class="line"></div>
+		
+		<a href="#">Link 1</a> | 
+		<a href="#">Link 2</a> | 
+		<a href="#">Link 3</a> | 
+		<a href="#">Link 4</a> | 
+		<a href="#">Link 5</a>
+		
+		<div class="spacer-md"></div>
+		<small>© All Rights Reserved.</small>
+		
+	</footer>
+
+</body>
+
+</html>

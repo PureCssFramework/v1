@@ -1,0 +1,553 @@
+/*** Main Nav ***/
+
+.navbar {
+	height: 52px;
+	background-color: rgba(255,255,255,.9);
+	border-top: 1px solid  rgba(255,255,255,1);
+	border-bottom: 1px solid  rgba(255,255,255,1);
+}
+
+
+.navbar > div {
+	position: relative;
+	padding: 0px;
+	height: 50px;
+}
+
+.navbar .logo {
+	line-height: 50px;
+	height: 50px;
+	text-align: left;
+	padding-left: 12px;
+	font-weight: normal;
+	font-size: calc(12px + .6vw);
+}
+
+.navbar .logo a {
+	text-decoration: none;
+	color: #333;
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.navbar-links {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.navbar-search {
+	display: inline-block;
+	height: 100%;
+}
+
+
+.navbar-links > a,
+.navbar-search,
+.navbar-links > .has-drop-menu {
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	padding: 0px 12px 0px 12px;
+	text-align: center;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+}
+
+.navbar-links:after {
+	content: "";
+	display: block;
+	width: 0;
+	height:0;
+	clear: both;
+}
+
+
+.navbar .text-right > .navbar-links {
+	width: auto;
+}
+.navbar-links > a,
+.navbar-links > .has-drop-menu,
+.has-drop-menu label a {
+	color: #333333;
+	transition: color .3s;
+}
+
+.navbar-links > a:hover,
+.navbar-links > .has-drop-menu:hover {
+	color: #000;
+	background-color: #ccc;
+	transition: color .3s;
+}
+
+.navbar-links > a.active,
+.navbar-links > .has-drop-menu.active {
+	border-bottom: 2px solid $primary-color;
+}
+
+
+.navbar i.arrow-down {
+	margin-bottom: 2px;
+}
+
+.navbar .has-drop-menu:hover i.arrow-down {
+	margin-bottom: 2px;
+}
+
+.mobile-menu .hamburger,
+.mobile-menu .hamburger:before,
+.mobile-menu .hamburger:after{
+	background-color: #555;
+}
+
+.mobile-menu i.profile {
+	background-color: #555;
+}
+
+.mobile-menu i.profile:after {
+	background-color: #555;
+}
+
+.navbar-search {
+	margin-top: -2px;
+}
+
+.navbar-search input[type=search] {
+	width: 160px;
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.navbar-btn-link.right {
+	float: right;
+}
+
+.navbar-links > a.navbar-btn-link {
+	border: 0px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 10px 0px 10px;
+	color: #fff;
+	background-color: #1C6BE4;
+	box-sizing: border-box;
+	cursor: pointer;
+	opacity: .8;
+	transition: all .3s;
+	margin: 4px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.navbar-links > a.navbar-btn-link:hover {
+	opacity: 1;
+	transition: opacity .3s;
+	background-color: #1C6BE4;
+	color: #fff;
+}
+
+.navbar-links {
+	width: auto;
+}
+
+.fixed ~ .fixed-nav-space {
+	height: 52px;
+}
+
+.nav-side-item input:checked ~ label .arrow-down {
+	top: 18px;	
+}
+
+/*** Main Nav Dark Version ***/
+
+.main-container.header.dark,
+.dark .main-container.header {
+	background-color: rgba(20,20,20,.9);
+	color: #ccc;
+	border-top: 1px solid rgba(20,20,20,1);
+    border-bottom: 1px solid rgba(20,20,20,1);
+}
+
+.dark .navbar .logo a {
+	color: #fff;
+}
+
+.dark .navbar .navbar-links > a, 
+.dark .navbar .navbar-links > .has-drop-menu, 
+.dark .navbar .has-drop-menu label a {
+    color: #ccc;
+}
+
+.dark .navbar-links > a:hover, 
+.dark .navbar-links > .has-drop-menu:hover,
+.dark .navbar-links > a:hover, .navbar-links > A.has-drop-menu:hover {
+    color: #ccc;
+    background-color: #333;
+}
+
+.dark .navbar-links .has-drop-menu:hover i.arrow-down,
+.dark .navbar-links .has-drop-menu i.arrow-down{
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.dark .navbar .mobile-menu {
+    background-color: rgba(255,255,255,.05);
+}
+
+.dark .navbar .mobile-menu .hamburger, 
+.dark .navbar .mobile-menu .hamburger:before, 
+.dark .navbar .mobile-menu .hamburger:after,
+.dark .navbar .mobile-menu i.profile,
+.dark .navbar .mobile-menu i.profile:after {
+    background-color: #999;
+}
+
+
+
+/* Show Mobile Menu */
+@media all and (max-width: 1024px) {
+	
+	
+	.navbar {
+		text-align: center;	
+	}
+	
+	.navbar.rounded-corners {
+		border-radius: 0;	
+	}
+	
+	.navbar .logo {
+		display: inline-block;
+		float: none;
+		margin: auto;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.mobile-menu {
+		display: block;
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		z-index:51;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		background-color: rgba(255,255,255,.2);
+	}
+	
+	.mobile-menu.left-side {
+		left: 0;
+	}
+	
+	.mobile-menu.right-side {
+		left: auto;
+		right: 0;
+	}
+	
+	.mobile-menu i.hamburger {
+		display: block;
+		height: 2px;
+		width: 30px;
+		margin-top: 23px;
+		margin-left: 10px;
+		transition: all .3s ease-in-out;
+	}
+	
+	.mobile-menu i.hamburger:before {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 2px;
+		width: 30px;
+		margin-top: -6px;
+		transition: all .3s ease-in-out;
+	}
+	
+	.mobile-menu i.hamburger:after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 2px;
+		width: 30px;
+		margin-top: 6px;
+		transition: all .3s ease-in-out;
+	}
+	
+	#mobileMenu:checked ~ .mobile-menu i.hamburger {
+		transition: all .3s ease-in-out;
+		background-color: transparent;
+		width: 0;
+	}
+	
+	#mobileMenu:checked ~ .mobile-menu i.hamburger:before {
+		transform: rotate(45deg);
+		margin-top: 0;
+		transition: all .3s ease-in-out;
+		width: 16px;
+		margin-left: 7px;
+	}
+	
+	#mobileMenu:checked ~ .mobile-menu i.hamburger:after {
+		transform: rotate(-45deg);
+		margin-top: 0;
+		transition: all .3s ease-in-out;
+		width: 16px;
+		margin-left: 7px;
+	}
+	
+	.mobile-menu i.profile {
+		display: block;
+		height: 6px;
+		width: 6px;
+		border-radius: 50%;
+		margin-top: 18px;
+		margin-left: 22px;
+	}
+	
+	
+	.mobile-menu i.profile:after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 8px;
+		width: 12px;
+		border-radius: 50% 50% 0 0;
+		margin-top: 6px;
+		margin-left: -3px;
+	}
+	
+	.drop-menu-input:checked ~ .navbar nav a,
+	.drop-menu-input:checked ~ .navbar nav div.has-drop-menu {
+		min-height: 40px;
+	}
+	
+	.navbar-links > a:hover,
+	.navbar-links > .has-drop-menu:hover {
+		color: #333;
+		background-color: transparent;
+		transition: color .3s;
+	}
+	
+	#mobileMenu:checked ~ .left-side ~ #topMenuNav {
+		left: 0;
+		transition: left .3s;
+	}
+	
+	#mobileMenu:checked ~ .right-side ~ #topMenuNav {
+		right: 0;
+		transition: right .3s;
+	}
+	
+	#mobileMenu:checked ~ #mobileMenuLabel,
+	#mobileMenu2:checked ~ #mobileMenuLabel2 {
+		background-color: #eee;
+	}
+
+	#mobileMenu2:checked ~ #mobileMenuLabel2.left-side ~ #topMenuNav2 {
+		left: 0;
+		transition: left .3s;
+	}
+	
+	#mobileMenu2:checked ~ #mobileMenuLabel2.right-side ~ #topMenuNav2 {
+		right: 0;
+		transition: right .3s;
+	}
+	
+	#mobileMenu:checked ~ .full-screen[for='mobileMenu'],
+	#mobileMenu2:checked ~ .full-screen[for='mobileMenu2'] {
+		position: fixed;
+		z-index: 79;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 50px);
+	}
+	
+	.navbar .drop-menu-input:checked ~ .full-screen[for='mobileMenu'],
+	.navbar .drop-menu-input:checked ~ .full-screen[for='mobileMenu2'] {
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		left: 0;
+		height: 60px;
+		cursor: pointer;
+	}
+	
+	.navbar nav {
+		position: fixed;
+		z-index: 80;
+		top: 51px;
+		left: -110%;
+		width: 33.3%;
+		background-color: #eee;
+		height: 100%;
+		height: calc(100% - 51px);
+		transition: left .3s;
+		box-shadow: 3px 1px 2px rgba(0,0,0,.3);
+	}
+	
+	.navbar .right-side ~ nav  {
+		left: auto;
+		right: -110%;
+		transition: right .3s;
+		box-shadow: -3px 1px 2px rgba(0,0,0,.3);
+	}
+	
+	header .navbar nav#topMenuNav,
+	header .navbar nav#topMenuNav2 {
+		width: 33.3%;
+	}
+	
+	.navbar nav a,
+	.navbar nav div.has-drop-menu {
+		box-sizing: border-box;
+		height: auto;
+		width: 100%;
+		float: none;
+		text-align: left;
+		border-bottom: 1px solid rgba(150,150,150,.2);
+	}
+	
+	.navbar nav a,
+	.navbar nav > label,
+	.navbar nav div.has-drop-menu {
+		width: 100%;
+		min-height: 60px;
+		line-height: 60px;
+		position: relative;
+		box-sizing: border-box;
+	}
+	
+	.navbar nav a:last-child {
+		border-bottom: 0px;
+	}
+	
+	.navbar-links {
+		height: 100%;	
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
+	.navbar .drop-menu {
+		box-shadow: none;
+		background-color: transparent;
+		position: relative;
+		z-index: 90;
+		padding: 0;
+	}
+	
+	.navbar-links .drop-menu-input ~ .full-screen{
+		position:absolute;
+	}
+	
+	.navbar ul.drop-menu {
+		background-color: rgba(0,0,0,.05);
+	}
+	
+	.navbar ul.drop-menu a:hover {
+		background-color: transparent;
+	}
+	
+	nav.text-right {
+		text-align: left;
+	}
+	
+	.navbar-links {	
+		width: 100%;
+	}
+	
+	.navbar-btn-link.right {
+		float: none;
+	}
+	
+	.navbar-btn-link {
+		max-width: 80%;
+	}
+	
+	.navbar .text-right > .navbar-links {
+		width: 100%;
+	}
+	
+	/* Dark Header */
+	.dark .navbar #mobileMenu:checked ~ #mobileMenuLabel, 
+	.dark .navbar #mobileMenu2:checked ~ #mobileMenuLabel2 {
+		background-color: #444;
+	}
+
+	.dark .navbar nav {
+		background-color: #444;
+	}
+
+	.dark .navbar nav div.has-drop-menu a {
+		color: #ccc;
+	}
+	
+	.navbar i.arrow-down {
+		margin-bottom: 2px;
+	}
+	
+	.navbar .has-drop-menu.hover-menu:hover  i.arrow-down,
+	.navbar .has-drop-menu.hover-menu:hover  i.arrow-down {
+		transform: rotate(-45deg);
+		margin-bottom: 2px;
+	}
+	
+	.navbar .hover-menu.drop-menu-input:checked ~ i.arrow-down,
+	.navbar .hover-menu.drop-menu-input:checked:hover i.arrow-down,
+	.navbar .has-drop-menu .drop-menu-input:checked ~ i.arrow-down,
+	.navbar .has-drop-menu .drop-menu-input:checked:hover i.arrow-down{
+		transform: rotate(135deg);
+		margin-bottom: 2px;
+	}
+
+	.dark .navbar .drop-menu li.sep {
+		height: 1px;
+		background-color: #555;
+	}
+	
+	.navbar .drop-menu,
+	.dark .navbar .drop-menu {
+		border: 0;
+	}
+	
+	.navbar-links > a.active,
+	.navbar-links > .has-drop-menu.active {
+		border-bottom: 1px solid rgba(150,150,150,0.2);
+		border-left: 4px solid $primary-color;
+	}
+	
+}
+
+
+@media all and (max-width: 767px) {
+	
+	header .navbar nav#topMenuNav,
+	header .navbar nav#topMenuNav2 {
+		width: 49.5%;
+	}
+	
+}
+
+
+@media all and (max-width: 375px) {
+	
+	header .navbar nav#topMenuNav,
+	header .navbar nav#topMenuNav2 {
+		width: 100%;
+	}
+	
+	#mobileMenu:checked ~ .full-screen[for='mobileMenu'], 
+	#mobileMenu2:checked ~ .full-screen[for='mobileMenu2'] {
+		top: 0px;
+		height: 100%;
+	}
+	
+}

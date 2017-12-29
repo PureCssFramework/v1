@@ -1,0 +1,590 @@
+
+
+body {
+	font-size: calc(10px + .2vw);
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+	color: #111;
+}
+
+a { 
+	color: #0f8ee0;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+}
+
+.rounded-corners {
+	border-radius: 5px;
+}
+
+/*** Header ***/
+.main-container.header {
+	background-color: rgba(255,255,255,.9);
+	border-top: 1px solid  rgba(255,255,255,1);
+	border-bottom: 1px solid  rgba(255,255,255,1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+
+/*** Nav Menu ***/
+
+.navbar .logo a {
+	color: #333;
+	font-weight: normal;
+}
+
+.navbar {
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.navbar-links > a,
+.navbar-links > .has-drop-menu,
+.has-drop-menu label a {
+	color: #333;
+}
+
+.navbar-links > a:hover,
+.navbar-links > .has-drop-menu:hover {
+	color: #000;
+	background-color: #ccc;
+}
+
+.drop-menu-radio:checked ~ .menu-label {
+	background-color: #ccc;
+}
+
+.navbar .logo {
+	font-size: calc(10px + 1vw);
+	font-weight: bold;
+}
+
+.drop-menu a {
+	color: #333;
+}
+
+.drop-menu a:hover {
+	color: #000;
+	background-color: #eee;
+}
+
+.has-drop-menu label:hover a {
+	color: #000;
+}
+
+
+/*** Mobile Menu ***/
+.mobile-menu {
+	background-color: rgba(255,255,255,.2);
+}
+
+
+/*** Icons ***/
+
+i.arrow-down {
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+
+.has-drop-menu:hover i.arrow-down {
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.primary i.arrow-down,
+.has-drop-menu:hover .primary i.arrow-down,
+.secondary i.arrow-down,
+.has-drop-menu:hover .secondary i.arrow-down,
+.success i.arrow-down,
+.has-drop-menu:hover .success i.arrow-down,
+.warning i.arrow-down,
+.has-drop-menu:hover .warning i.arrow-down,
+.danger i.arrow-down,
+.danger.has-drop-menu:hover i.arrow-down {
+	border-left-color: rgba(255,255,255,1);
+	border-bottom-color: rgba(255,255,255,1);
+}
+
+.mobile-menu .hamburger,
+.mobile-menu .hamburger:before,
+.mobile-menu .hamburger:after{
+	background-color: #555;
+}
+
+.mobile-menu i.profile {
+	background-color: #555;
+}
+
+.mobile-menu i.profile:after {
+	background-color: #555;
+}
+
+
+/*** Buttons ***/
+
+.btn,
+a.btn,
+input.btn,
+label.btn,
+.form-elements input[type=submit],
+.form-elements input[type=reset] {
+	color: #333;
+	background-color: #ccc;
+}
+
+.btn:hover,
+label.btn:hover,
+a.btn:hover,
+input.btn:hover,
+.form-elements input[type=submit]:hover,
+.form-elements input[type=reset]:hover,
+.btn.active {
+	cursor: pointer;
+	background-color: #eee;
+}
+
+.btn-ghost,
+label.btn-ghost,
+a.btn-ghost,
+input.btn-ghost {
+	color: #333;
+	border: 1px solid #666;
+}
+
+.btn-ghost:hover,
+label.btn-ghost:hover,
+a.btn-ghost:hover,
+input.btn-ghost:hover,
+.btn-ghost.active {
+	border-color: #000;
+	color: #000;
+	background-color: rgba(0,0,0,.1);
+}
+
+/* Ghost on dark BG*/
+.btn-ghost.inverted,
+label.btn-ghost.inverted,
+a.btn-ghost.inverted,
+input.btn-ghost.inverted {
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: rgba(255,255,255,.1);
+}
+
+.btn-ghost.inverted:hover,
+label.btn-ghost.inverted:hover,
+a.btn-ghost.inverted:hover,
+input.btn-ghost.inverted:hover,
+.btn-ghost.inverted.active {
+	border-color: #fff;
+	background-color: rgba(255,255,255,.5);
+}
+
+.btn.primary,
+a.btn.primary,
+label.btn.primary,
+input.btn.primary,
+.form-elements input[type=submit].btn.primary,
+.form-elements input[type=reset].btn.primary {
+	color: #fff;
+	background-color: rgba(28,107,228,1);
+}
+
+.btn.primary:hover,
+a.btn.primary:hover,
+label.btn.primary:hover,
+input.btn.primary:hover,
+.form-elements input[type=submit].btn.primary:hover,
+.form-elements input[type=reset].btn.primary:hover,
+.btn.primary.active {
+	background-color: rgba(28,107,228,.7);
+}
+
+.btn.secondary,
+a.btn.secondary,
+label.btn.secondary,
+input.btn.secondary,
+.form-elements input[type=submit].btn.secondary,
+.form-elements input[type=reset].btn.secondary {
+	color: #fff;
+	background-color:  rgba(247,148,29,1);
+}
+
+.btn.secondary:hover,
+a.btn.secondary:hover,
+label.btn.secondary:hover,
+input.btn.secondary:hover,
+.form-elements input[type=submit].btn.secondary:hover,
+.form-elements input[type=reset].btn.secondary:hover,
+.btn.secondary.active {
+	background-color: rgba(247,148,29,.7);
+
+}
+
+.btn.info,
+a.btn.info,
+label.btn.info,
+input.btn.info,
+.form-elements input[type=submit].btn.info,
+.form-elements input[type=reset].btn.info {
+	color: #fff;
+	background-color: rgba(0,174,239,1);
+}
+
+.btn.info:hover,
+a.btn.info:hover,
+label.btn.info:hover,
+input.btn.info:hover,
+.form-elements input[type=submit].btn.info:hover,
+.form-elements input[type=reset].btn.info:hover,
+.btn.info.active {
+	background-color: rgba(0,174,239,.7);
+}
+
+.btn.success,
+a.btn.success,
+label.btn.success,
+input.btn.success,
+.form-elements input[type=submit].btn.success,
+.form-elements input[type=reset].btn.success {
+	color: #fff;
+	background-color: rgba(57,181,74,1);
+}
+
+.btn.success:hover,
+a.btn.success:hover,
+label.btn.success:hover,
+input.btn.success:hover,
+.form-elements input[type=submit].btn.success:hover,
+.form-elements input[type=reset].btn.success:hover,
+.btn.success.active {
+	background-color: rgba(57,181,74,.7);
+}
+
+.btn.warning,
+a.btn.warning,
+label.btn.warning,
+input.btn.warning,
+.form-elements input[type=submit].btn.warning,
+.form-elements input[type=reset].btn.warning {
+	color: #5c2703;
+	background-color: rgba(247,188,29,1);
+}
+
+.btn.warning:hover,
+a.btn.warning:hover,
+label.btn.warning:hover,
+input.btn.warning:hover,
+.form-elements input[type=submit].btn.warning:hover,
+.form-elements input[type=reset].btn.warning:hover,
+.btn.warning.active {
+	background-color: rgba(247,188,29,.7);
+}
+
+
+.btn.danger,
+a.btn.danger,
+label.btn.danger,
+input.btn.danger,
+.form-elements input[type=submit].btn.danger,
+.form-elements input[type=reset].btn.danger {
+	color: #fff;
+	background-color: rgba(186,9,9,1);
+}
+
+.btn.danger:hover,
+a.btn.danger:hover,
+label.btn.danger:hover,
+input.btn.danger:hover,
+.form-elements input[type=submit].btn.danger:hover,
+.form-elements input[type=reset].btn.danger:hover,
+.btn.danger.active {
+	background-color: rgba(186,9,9,.7);
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+	opacity: .8;
+}
+
+/* Lines */
+.line,
+.line-dotted,
+.line-dashed {
+	border-color: #ccc;
+}
+
+/*** Side Nav ***/
+.nav-side {
+	color: #000;
+}
+
+.nav-side-item a:hover {	
+	color: #000;
+	background-color: #eee;
+}
+
+.nav-side-item label {
+	border-color: #eee;
+}
+
+.nav-side_menu:checked ~ .nav-side .nav-side-item:hover label {
+	background-color: #2c2c2c;
+}
+
+/*** Tables ***/
+.tbl td,
+.tbl th {
+	border-bottom: 1px solid rgba(150,150,150,.1);
+}
+
+.tbl thead,
+.tbl thead {
+	border-bottom: 2px solid rgba(150,150,150,.1);
+}
+
+.tbl.bordered {
+	background-color: rgba(150,150,150,.3);
+}
+
+.tbl.thBg th {
+	background-color: #eee;
+}
+
+.tbl.striped-even tr:nth-child(even) td {
+	background-color: rgba(150,150,150,.1);
+}
+
+.tbl.striped-odd tr:nth-child(odd) td {
+	background-color:  rgba(150,150,150,.1);
+}
+
+.tbl.row-hover tr:hover > td,
+.tbl.row-hover tr:hover > th {
+	background-color: rgba(150,150,150,.1);
+}
+
+.tbl.row-hover thead tr:hover > td,
+.tbl.row-hover thead tr:hover > th {
+	background-color: rgba(150,150,150,.1);
+}
+
+.tbl.thBg.row-hover thead tr:hover > td,
+.tbl.thBg.row-hover thead tr:hover > th {
+	background-color: rgba(150,150,150,.1);
+}
+
+
+/* Contextual Colors */
+.primary {
+	background-color: rgba(28,107,228,1);
+	color: #fff;
+}
+
+.secondary {
+	background-color: rgba(247,148,29,1);
+	color: #fff;
+}
+
+.info {
+	background-color: rgba(0,174,239,1);
+	color: #fff;
+}
+
+.success {
+	background-color: rgba(57,181,74,1);
+	color: #fff;
+}
+
+.warning {
+	background-color: rgba(247,188,29,1);
+	color: #5c2703;
+}
+
+.danger {
+	background-color: rgba(186,9,9,1);
+	color: #fff;
+}
+
+.primary-light,
+.primary-light td,
+.primary-light th {
+	background-color: rgba(28,107,228,.25);
+}
+
+tr.primary-light {
+	background-color: transparent;
+}
+
+.secondary-light,
+.secondary-light td,
+.secondary-light th  {
+	background-color: rgba(247,148,29,.25);
+}
+
+tr.secondary-light {
+	background-color: transparent;
+}
+
+.info-light,
+.info-light td,
+.info-light th  {
+	background-color: rgba(0,174,239,.25);
+}
+
+tr.info-light {
+	background-color: transparent;
+}
+
+.success-light,
+.success-light td,
+.success-light th {
+	background-color: rgba(57,181,74,.25);
+}
+
+tr.success-light {
+	background-color: transparent;
+}
+
+.warning-light,
+.warning-light td,
+.warning-light th {
+	background-color: rgba(247,188,29,.25);
+}
+
+tr.warning-light {
+	background-color: transparent;
+}
+
+.danger-light,
+.danger-light td,
+.danger-light th {
+	background-color: rgba(186,9,9,.25);
+}
+
+tr.danger-light {
+	background-color: transparent;
+}
+
+
+.text-primary i.alert-icon:after {
+	border-bottom-color: rgba(28,107,228,1);
+}
+
+.text-secondary i.alert-icon:after {
+	border-bottom-color: rgba(247,148,29,1);
+}
+
+.text-info i.alert-icon:after {
+	border-bottom-color: rgba(0,174,239,1);
+}
+
+.text-success i.alert-icon:after {
+	border-bottom-color: rgba(57,181,74,1);
+}
+
+.text-warning i.alert-icon:after {
+	border-bottom-color: rgba(167,116,6,1);
+}
+
+.text-danger i.alert-icon:after {
+	border-bottom-color: rgba(186,9,9,1);
+}
+
+
+.text-primary {
+	color: rgba(28,107,228,1);
+}
+
+.text-secondary {
+	color: rgba(247,148,29,1);
+}
+
+.text-info {
+	color: rgba(0,174,239,1);
+}
+
+.text-success {
+	color: rgba(57,181,74,1);
+}
+
+.text-warning {
+	color: rgba(167,116,6,1);
+}
+
+.text-danger {
+	color: rgba(186,9,9,1);
+}
+
+
+
+/* Border Colors */
+
+.border-primary {
+	border: 1px solid rgba(28,107,228,1);
+}
+
+.border-secondary {
+	border: 1px solid rgba(247,148,29,1);
+}
+
+.border-info {
+	border: 1px solid rgba(0,174,239,1);
+}
+
+.border-success {
+	border: 1px solid rgba(57,181,74,1);
+}
+
+.border-warning {
+	border: 1px solid rgba(167,116,6,1);
+}
+
+.border-danger {
+	border: 1px solid rgba(186,9,9,1);
+}
+
+
+
+@media all and (max-width: 1024px) {
+	
+	.navbar nav {
+		background-color: #eee;	
+	}
+	
+	.navbar-links > a:hover,
+	.navbar-links > .has-drop-menu:hover {
+		color: #333;
+		background-color: transparent;
+		transition: all .3s;
+	}
+	
+	.has-drop-menu:hover i.arrow-down {
+		border-left: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
+	
+	.drop-menu a:hover {
+		color: #333;
+		background-color: transparent;
+	}
+	
+	.drop-menu a {
+		color: #333;
+	}
+	
+	.drop-menu-radio:checked ~ .menu-label {
+		background-color: transparent;
+	}
+	
+	/* Mobile menu background color */
+	#mobileMenu:checked ~ #mobileMenuLabel,
+	#mobileMenu2:checked ~ #mobileMenuLabel2 {
+		background-color: #eee;
+	}
+	
+}
+
+
+
+

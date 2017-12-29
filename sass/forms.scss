@@ -1,0 +1,515 @@
+
+$form-padding: 4px;
+$form-label-padding: 6px 4px 2px 0px;
+$form-font-size: calc(.2em + 12px);
+$form-background: #fff;
+$form-border:  1px solid #ccc;
+$form-background-focus: 1px solid #999;
+$form-border-focus:  1px solid #ccc;
+
+
+.form-elements {
+	margin-bottom: 10px;
+}
+
+.form-elements input[type=text],
+.form-elements input[type=email],
+.form-elements input[type=password],
+.form-elements input[type=number],
+.form-elements input[type=address],
+.form-elements select,
+.form-elements textarea {
+	width: 100%;
+	margin: 0;
+	padding: $form-padding;
+	box-sizing: border-box;
+	background-color: $form-background;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/* appearance: none; */
+	height: 2.5em;
+	line-height: 2.5em;
+	border: $form-border;
+	transition: border-color .3s;
+	font-size: $form-font-size;
+	border-radius: $rounded-corners;
+}
+
+.form-elements textarea {
+	height: 100px;
+	font-family: $font-stack;
+	padding-top: 3px;
+}
+
+.form-elements input[type=text]:focus,
+.form-elements input[type=email]:focus,
+.form-elements input[type=password]:focus,
+.form-elements input[type=number]:focus,
+.form-elements input[type=address]:focus,
+.form-elements select:focus,
+.form-elements textarea:focus {
+	border: $form-background-focus;
+	transition: border-color .3s;
+}
+
+.form-elements input[type=file] {
+	border: 0;
+	padding-left: 0;
+	width: auto;
+	display: block;
+	line-height: 20px;
+	color: #999;
+}
+
+.form-elements label {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: $form-label-padding;
+	box-sizing: border-box;
+	background-color: transparent;
+	-webkit-appearance: none;
+	font-size: $form-font-size;
+	height: 2.5em;
+	line-height: 2.3em;
+}
+
+.form-check-radio input[type=checkbox],
+.form-check-radio input[type=radio]{
+	width: 1.2em;
+	margin: 0px 4px 0 0px;
+	padding: 4px;
+	box-sizing: border-box;
+	background-color: #fff;
+	-webkit-appearance: checkbox;
+	height: 1.2em;
+	border: 1px solid #ccc;
+	color: #111;
+}
+
+.form-elements label.form-check-radio {
+	display: inline-block;
+	width: auto;
+	font-size: calc(.7em + .2vw);
+	cursor: pointer;
+}
+
+.form-horizontal .form-elements label {
+	text-align: right;
+}
+
+.form-elements select {
+	line-height: 20px;
+	margin-bottom: 0px;
+}
+
+/* Condensed */
+.form-condensed .flex-grid>div, 
+.form-condensed .flex-grid .col {
+	padding: 0;	
+}
+
+.form-condensed .form-elements input[type=text],
+.form-condensed .form-elements input[type=email],
+.form-condensed .form-elements input[type=password],
+.form-condensed .form-elements input[type=number],
+.form-condensed .form-elements input[type=address],
+.form-condensed .form-elements label,
+.form-condensed .form-elements select,
+.form-condensed .form-elements textarea {
+	padding: 2px;
+}
+
+.form-condensed .grid.form-elements > div {
+	padding: 0;
+	margin-bottom: 1px;
+}
+
+.form-condensed .grid.form-elements > div textarea {
+	margin-top: 0px;
+}
+
+.form-horizontal .form-elements label.form-check-radio {
+	line-height: 10px;
+	padding: 6px 6px 6px 0px;
+	text-align: left;
+	font-size: calc(.7em + .2vw);
+}
+
+
+/* Inline */
+.form-inline.form-elements input[type=text],
+.form-inline.form-elements input[type=email],
+.form-inline.form-elements input[type=password],
+.form-inline.form-elements input[type=number],
+.form-inline.form-elements input[type=address],
+.form-inline.form-elements label,
+.form-inline.form-elements select {
+	float: left;
+	width: auto;
+	margin: 0 4px 0px 0px;
+}
+
+.form-inline .btn.form-inline-btn {
+	padding: .59em;
+	margin: 0 0 0 10px;
+}
+
+/* Readonly */
+.form-elements input[type=text].form-read-only,
+.form-elements input[type=email].form-read-only,
+.form-elements input[type=password].form-read-only,
+.form-elements input[type=number].form-read-only,
+.form-elements input[type=address].form-read-only,
+.form-elements select.form-read-only,
+.form-elements textarea.form-read-only {
+    background-color: #eee;
+    opacity: 1;
+}
+
+/* disabled */
+fieldset[disabled] .form-elements input[type=text],
+fieldset[disabled] .form-elements input[type=email],
+fieldset[disabled] .form-elements input[type=password],
+fieldset[disabled] .form-elements input[type=number],
+fieldset[disabled] .form-elements input[type=address],
+fieldset[disabled] .form-elements select,
+fieldset[disabled] .form-elements input,
+fieldset[disabled] .form-elements textarea,
+fieldset[disabled] .form-elements .btn,
+fieldset[disabled] .form-elements .btn:hover,
+.form-elements input.disabled,
+.form-elements input[type=text].disabled,
+.form-elements input[type=email].disabled,
+.form-elements input[type=password].disabled,
+.form-elements input[type=number].disabled,
+.form-elements input[type=address].disabled,
+.form-elements select.disabled,
+.form-elements textarea.disabled,
+.btn.disabled,
+.btn.disabled:hover {
+    opacity: .6;
+	cursor: not-allowed;
+	background-color: #eee;
+}
+
+
+/* Element Sizes */
+
+/* Extra Large */
+.form-elements.elements-xl {
+	margin-bottom: 10px;
+}
+
+.form-elements.elements-xl input[type=text],
+.form-elements.elements-xl input[type=email],
+.form-elements.elements-xl input[type=password],
+.form-elements.elements-xl input[type=number],
+.form-elements.elements-xl input[type=address],
+.form-elements.elements-xl select,
+.form-elements.elements-xl textarea {
+	height: 2.5em;
+	line-height: 2.5em;
+	font-size: calc(16px + .2vw);
+}
+
+.form-elements.elements-xl label {
+	height:  2.5em;
+	line-height: 1.5em;
+	font-size: calc(16px + .2vw);
+	display:inline-block;
+}
+
+.form-elements.elements-xl textarea {
+	height: 5em;
+	line-height: calc(28px + .2vw);
+	font-size: calc(16px + .2vw);
+}
+
+/* Large */
+.form-elements.elements-lg {
+	margin-bottom: 10px;
+}
+
+.form-elements.elements-lg input[type=text],
+.form-elements.elements-lg input[type=email],
+.form-elements.elements-lg input[type=password],
+.form-elements.elements-lg input[type=number],
+.form-elements.elements-lg input[type=address],
+.form-elements.elements-lg select,
+.form-elements.elements-lg textarea {
+	font-size: calc(14px + .2vw);
+}
+
+.form-elements.elements-lg label {
+	display:inline-block;
+	height: 2em;
+	line-height: 1.5em;
+	font-size: calc(14px + .2vw);
+}
+
+.form-elements.elements-lg textarea {
+	height: 4em;
+	line-height: calc(25px + .2vw);
+	font-size: calc(14px + .2vw);
+}
+
+
+/* Small */
+.form-elements.elements-sm {
+	margin-bottom: 10px;
+}
+
+.form-elements.elements-sm input[type=text],
+.form-elements.elements-sm input[type=email],
+.form-elements.elements-sm input[type=password],
+.form-elements.elements-sm input[type=number],
+.form-elements.elements-sm input[type=address],
+.form-elements.elements-sm select,
+.form-elements.elements-sm textarea {
+	height: 2em;
+	line-height: 2em;
+	font-size: calc(11px + .1vw);
+}
+
+.form-elements.elements-sm label {
+	height: 2em;
+	line-height: 1.5em;
+	font-size: calc(11px + .1vw);
+}
+
+.form-elements.elements-sm textarea {
+	height: 2em;
+	line-height: calc(19px + .1vw);
+	font-size: calc(11px + .1vw);
+}
+
+
+/* Extra Small */
+.form-elements.elements-xs {
+	margin-bottom: 10px;
+}
+
+.form-elements.elements-xs input[type=text],
+.form-elements.elements-xs input[type=email],
+.form-elements.elements-xs input[type=password],
+.form-elements.elements-xs input[type=number],
+.form-elements.elements-xs input[type=address],
+.form-elements.elements-xs select,
+.form-elements.elements-xs textarea {
+	height: 1.8em;
+	font-size: calc(9px + .1vw);
+	line-height: normal;
+}
+
+.form-elements.elements-xs label {
+	display:block;
+	height:1.8em;
+	line-height: normal;
+	font-size: calc(9px + .1vw);
+	padding-top: 3px;
+}
+
+.form-elements.elements-xs textarea {
+	height: 1em;
+	line-height: calc(18px + .1vw);
+	font-size: calc(9px + .1vw);
+}
+
+
+/* checkbox:slidebox */
+.form-elements label.form-check-radio.toggle-check {
+	display: flex;
+	align-items: center;
+}
+
+.toggle-check .toggle-check-text {
+	margin-left: 6px;
+}
+
+.toggle-check input[type=checkbox] {
+	display: none;
+}
+
+.toggle-check-box {
+	padding: 2px;
+    width: 2.5em;
+    height: 1.5em;
+    background-color: rgba(150,150,150,.6);
+    border-radius: 2.5em;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-check-box:hover:before {
+    background-color: rgba(150,150,150,.6);
+}
+
+.toggle-check-box:hover {
+    background-color: rgba(150,150,150,.8);
+}
+
+.toggle-check-box:before {
+	right: 1px;
+    background-color: rgba(150,150,150,.4);
+    border-radius: 2.5em;
+    transition: background 0.2s;
+	display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+	box-sizing: border-box;
+}
+
+.toggle-check-box:after {
+	width: 1.6em;
+    background-color: #fff; 
+    border-radius: 100%;
+    transition: right 0.2s;
+	display: block;
+    position: absolute;
+    top: 1px;
+    right: calc(100% - 1.65em);
+    bottom: 1px;
+    content: "";
+}
+
+.toggle-check input[type=checkbox]:checked ~ .toggle-check-box:before {
+    background-color: $primary-color;
+    transition: background 0.2s;
+}
+
+.toggle-check input[type=checkbox]:checked ~ .toggle-check-box:after {
+    border-radius: 100%;
+    transition: right 0.2s;
+	right: 1px;
+}
+
+.toggle-check input[type=checkbox]:disabled ~ .toggle-check-box {
+    opacity: .7;
+	cursor: not-allowed;
+}
+
+.form-line-design .form-elements input[type=text], 
+.form-line-design .form-elements input[type=email], 
+.form-line-design .form-elements input[type=password], 
+.form-line-design .form-elements input[type=number], 
+.form-line-design .form-elements input[type=address], 
+.form-line-design .form-elements select,
+.form-line-design .form-elements textarea {
+	border: 0;
+	border-bottom: 1px solid rgba(150,150,150,.7);
+	border-radius:0 !important;
+	transition: border .3s,  background-color .3s;
+	background-color: transparent;
+}
+
+.form-line-design .form-elements input[type=text]:focus, 
+.form-line-design .form-elements input[type=email]:focus, 
+.form-line-design .form-elements input[type=password]:focus, 
+.form-line-design .form-elements input[type=number]:focus, 
+.form-line-design .form-elements input[type=address]:focus, 
+.form-line-design .form-elements select:focus,
+.form-line-design .form-elements textarea:focus {
+	border-bottom: 1px solid $primary-color;
+	transition: border .3s,  background-color .3s;
+	/* background-color: rgba(150,150,150,.05); */
+}
+
+.select-element {
+	position: relative;
+}
+
+.select-element .select-arrow {
+	position: absolute;
+	width: 20px;
+	height: 80%;
+	border-left: 1px solid rgba(150,150,150,.1);
+	top: 10%;
+	right: 12px;
+}
+
+.select-element .select-arrow:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 5px solid rgba(150,150,150,.8);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	top: calc(50% - 2px);
+	right: 0px;
+	transform: rotate(0deg);
+	transition: transform .3s;
+}
+
+.select-element select:focus ~ .select-arrow:after {
+	transform: rotate(180deg);
+	transition: transform .3s;
+	border-top: 5px solid rgba(150,150,150,1);
+}
+
+
+@media all and (max-width: 1024px) {
+	
+	.toggle-check-box {
+		width: 4.5em;
+		height: 2.5em;
+		border-radius: 3.5em;
+	}
+
+	.toggle-check-box:before {
+		background-color: rgba(150,150,150,.4);
+		border-radius: 3.5em;
+	}
+
+	.toggle-check-box:after {
+		width: 2.6em;
+		right: calc(100% - 2.7em);
+	}
+	
+}
+
+@media all and (max-width: 767px) {
+	
+	
+	/* Horizontal */
+	.form-horizontal .form-elements label {
+		text-align: left;
+	}
+	
+	
+	/* Inline */
+	.form-inline.form-elements input[type=text],
+	.form-inline.form-elements input[type=email],
+	.form-inline.form-elements input[type=password],
+	.form-inline.form-elements input[type=number],
+	.form-inline.form-elements input[type=address],
+	.form-inline.form-elements label,
+	.form-inline.form-elements select {
+		float: none;
+		width: 100%;
+		margin: 0 4px 0px 0px;
+	}
+	
+	.form-inline .btn.form-inline-btn {
+		margin: 0px;
+	}
+	
+	
+	.form-elements.elements-xl label {
+		height: 40px;
+	}
+
+
+	.form-elements.elements-xs label,
+	.form-elements.elements-sm label {
+		line-height: 0;
+	}
+	
+	
+	
+}
+

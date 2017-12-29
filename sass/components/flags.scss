@@ -1,0 +1,58 @@
+
+.flag {
+	display: inline;
+	white-space: nowrap;
+	padding: 2px 8px 2px 8px;
+	font-size: 80%;
+	border-radius: 5px;
+}
+
+.flag.default,
+.flag-amount.default {
+	background-color: #ccc;
+	color: #333;
+}
+
+.flag-amount {
+	padding: 0px 5px 0px 5px;
+	font-size: 9px;
+	margin: -3px 0 0 0px;
+	position: absolute;
+	border-radius: 10px;
+	height: 16px;
+	line-height: 16px;
+}
+
+.flag-item {
+	position: relative;
+}
+
+.flag-item .flag-amount {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	margin: 0;
+	border-radius: 10px;
+	border: 2px solid #fff;
+}
+
+.navbar-links .flag-item .flag-amount {
+	margin: 0;
+	top: 0px;
+	right: 0px;
+}
+
+@media all and (max-width: 1024px) {
+	
+	.navbar-links .flag-item .flag-amount {
+		margin: 20px 0 0 0;
+		top: 0;
+		right: 10px;
+	}	
+	
+}
+
+
+
+
+

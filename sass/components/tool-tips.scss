@@ -1,0 +1,118 @@
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tooltip:hover .tip {
+	opacity: 1;
+	left: calc(100% + 10px);
+	transition: all .3s ease-in-out;
+}
+
+.tooltip .tip {
+	position: absolute;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	background-color: #222;
+	color: #fff;
+	pointer-events: none;
+	right: auto;
+	left: 0;
+	padding: 4px 8px 4px 8px;
+	border-radius: $rounded-corners;
+	white-space: nowrap;
+	z-index: 50;
+	box-shadow: 3px 10px 10px rgba(0,0,0,.2);
+	font-size: 80%;
+	
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.tooltip .tip:after {
+	content: ""; 
+	width: 0;
+	height: 0;
+	border-right: 7px solid #222;
+	border-bottom: 7px solid transparent;
+	border-top: 7px solid transparent;
+	position: absolute;
+	left: -7px;
+	top: calc(50% - 7px);
+}
+
+/* Tool Tip Left */
+.tooltip.tip-left:hover .tip,
+.tooltip.tip-left:focus .tip {
+	left: auto;
+	right: calc(100% + 10px);
+}
+
+.tooltip.tip-left .tip {
+	left: auto;
+	right: 0;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.tooltip.tip-left .tip:after {
+	border-right: 0;
+	border-left: 7px solid #222;
+	border-bottom: 7px solid transparent;
+	border-top: 7px solid transparent;
+	left: auto;
+	right: -7px;
+}
+
+/* Tool Tip Top */
+.tooltip.tip-top:hover .tip,
+.tooltip.tip-top:focus .tip {
+	top: auto;
+	bottom: calc(100% + 8px);
+}
+
+.tooltip.tip-top .tip {
+	bottom: 0;
+	top: auto;
+	left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.tooltip.tip-top .tip:after {
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-bottom: 0;
+	border-top: 7px solid #222;
+	left: 50%;
+	margin-left: -7px;
+	right: auto;
+	top: 100%;
+	margin-top: -1px;
+}
+
+
+/* Tool Tip Bottom */
+.tooltip.tip-bottom:hover .tip,
+.tooltip.tip-bottom:focus .tip{
+	left: 50%;
+	top:  calc(100% + 8px);
+}
+
+.tooltip.tip-bottom .tip {
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
+}
+
+.tooltip.tip-bottom .tip:after {
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-top: 0;
+	border-bottom: 7px solid #222;
+	left: 50%;
+	margin-left: -7px;
+	right: auto;
+	top:-7px;
+}

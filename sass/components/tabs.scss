@@ -1,0 +1,301 @@
+.tab-elements {
+	margin-bottom: 20px;
+}
+
+.tab-elements > input[type=radio] {
+	display: none;
+}
+
+.tab-btns {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	
+}
+
+.responsive-tabs {
+	z-index: 2;
+	overflow: hidden;
+}
+
+.responsive-tabs label {
+	margin: 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	white-space: nowrap;
+	margin-right: 3px;
+	border-radius: .3em .3em 0 0;
+}
+
+.tab-info {
+	display: none;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: -1px 0px 20px 0px;
+}
+
+.tab-elements input[type=radio]:nth-child(1):checked ~ .responsive-tabs label:nth-child(1),
+.tab-elements input[type=radio]:nth-child(2):checked ~ .responsive-tabs label:nth-child(2),
+.tab-elements input[type=radio]:nth-child(3):checked ~ .responsive-tabs label:nth-child(3),
+.tab-elements input[type=radio]:nth-child(4):checked ~ .responsive-tabs label:nth-child(4),
+.tab-elements input[type=radio]:nth-child(5):checked ~ .responsive-tabs label:nth-child(5),
+.tab-elements input[type=radio]:nth-child(6):checked ~ .responsive-tabs label:nth-child(6),
+.tab-elements input[type=radio]:nth-child(7):checked ~ .responsive-tabs label:nth-child(7),
+.tab-elements input[type=radio]:nth-child(8):checked ~ .responsive-tabs label:nth-child(8),
+.tab-elements input[type=radio]:nth-child(9):checked ~ .responsive-tabs label:nth-child(9),
+.tab-elements input[type=radio]:nth-child(10):checked ~ .responsive-tabs label:nth-child(10),
+.tab-elements input[type=radio]:nth-child(11):checked ~ .responsive-tabs label:nth-child(11),
+.tab-elements input[type=radio]:nth-child(12):checked ~ .responsive-tabs label:nth-child(12),
+.tab-elements input[type=radio]:nth-child(13):checked ~ .responsive-tabs label:nth-child(13),
+.tab-elements input[type=radio]:nth-child(14):checked ~ .responsive-tabs label:nth-child(14),
+.tab-elements input[type=radio]:nth-child(15):checked ~ .responsive-tabs label:nth-child(15),
+.tab-elements input[type=radio]:nth-child(16):checked ~ .responsive-tabs label:nth-child(16),
+.tab-elements input[type=radio]:nth-child(17):checked ~ .responsive-tabs label:nth-child(17),
+.tab-elements input[type=radio]:nth-child(18):checked ~ .responsive-tabs label:nth-child(18),
+.tab-elements input[type=radio]:nth-child(19):checked ~ .responsive-tabs label:nth-child(19),
+.tab-elements input[type=radio]:nth-child(20):checked ~ .responsive-tabs label:nth-child(20) {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #fff;
+	color: inherit;
+}
+
+.tab-elements input[type=radio]:nth-child(1):checked ~ .tab-info-wrap > .tab-info:nth-child(1),
+.tab-elements input[type=radio]:nth-child(2):checked ~ .tab-info-wrap > .tab-info:nth-child(2),
+.tab-elements input[type=radio]:nth-child(3):checked ~ .tab-info-wrap > .tab-info:nth-child(3),
+.tab-elements input[type=radio]:nth-child(4):checked ~ .tab-info-wrap > .tab-info:nth-child(4),
+.tab-elements input[type=radio]:nth-child(5):checked ~ .tab-info-wrap > .tab-info:nth-child(5),
+.tab-elements input[type=radio]:nth-child(6):checked ~ .tab-info-wrap > .tab-info:nth-child(6),
+.tab-elements input[type=radio]:nth-child(7):checked ~ .tab-info-wrap > .tab-info:nth-child(7),
+.tab-elements input[type=radio]:nth-child(8):checked ~ .tab-info-wrap > .tab-info:nth-child(8),
+.tab-elements input[type=radio]:nth-child(9):checked ~ .tab-info-wrap > .tab-info:nth-child(9),
+.tab-elements input[type=radio]:nth-child(10):checked ~ .tab-info-wrap > .tab-info:nth-child(10),
+.tab-elements input[type=radio]:nth-child(11):checked ~ .tab-info-wrap > .tab-info:nth-child(11),
+.tab-elements input[type=radio]:nth-child(12):checked ~ .tab-info-wrap > .tab-info:nth-child(12),
+.tab-elements input[type=radio]:nth-child(13):checked ~ .tab-info-wrap > .tab-info:nth-child(13),
+.tab-elements input[type=radio]:nth-child(14):checked ~ .tab-info-wrap > .tab-info:nth-child(14),
+.tab-elements input[type=radio]:nth-child(15):checked ~ .tab-info-wrap > .tab-info:nth-child(15),
+.tab-elements input[type=radio]:nth-child(16):checked ~ .tab-info-wrap > .tab-info:nth-child(16),
+.tab-elements input[type=radio]:nth-child(17):checked ~ .tab-info-wrap > .tab-info:nth-child(17),
+.tab-elements input[type=radio]:nth-child(18):checked ~ .tab-info-wrap > .tab-info:nth-child(18),
+.tab-elements input[type=radio]:nth-child(19):checked ~ .tab-info-wrap > .tab-info:nth-child(19),
+.tab-elements input[type=radio]:nth-child(20):checked ~ .tab-info-wrap > .tab-info:nth-child(20) {
+	display: block;
+}
+
+
+/* Vertical Tabs */
+.tabs-vertical {
+	position: relative;
+	width: 100%;
+	display: table;
+}
+
+.tabs-vertical > div {
+	display: block;
+	display: table-cell;
+	width: 150px;
+	box-sizing: border-box;
+	vertical-align: top;
+	z-index: 2;
+	position: relative;
+	margin: 0 0 0 -3px;
+	border:0;
+}
+
+.tabs-vertical .tab-info-wrap {
+	display: block;
+	display: table-cell;
+	box-sizing: border-box;
+	width: calc(100% - 150px);
+	vertical-align: top;
+	min-height: 100%;
+	position: relative;
+	z-index: 1;
+	border: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-top: 0;
+}
+
+
+.tabs-vertical .tab-info-wrap .tab-info {
+	padding: 10px 10px 10px 25px;
+}
+
+.tabs-vertical .tab-btns label {
+	float: none;
+	display: block;
+	border-radius: .3em 0  0 .3em;
+}
+
+.tabs-vertical .tab-btns {
+	position: static;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.tabs-vertical .tab-btns .btn {
+	margin: 0 0 3px 0;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-right: 0;
+	text-align: left;
+	position: relative;
+}
+
+
+.tabs-vertical .tab-btns .btn:last-child {
+	margin: 0;
+}
+
+.tabs-vertical .tab-info {
+    margin: 0px 0px 0px 0px;
+	height: 100%;
+	border: 0;
+}
+
+
+.tabs-vertical.tab-elements input[type=radio]:nth-child(1):checked ~ div label:nth-child(1),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(2):checked ~ div label:nth-child(2),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(3):checked ~ div label:nth-child(3),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(4):checked ~ div label:nth-child(4),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(5):checked ~ div label:nth-child(5),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(6):checked ~ div label:nth-child(6),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(7):checked ~ div label:nth-child(7),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(8):checked ~ div label:nth-child(8),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(9):checked ~ div label:nth-child(9),
+.tabs-vertical.tab-elements input[type=radio]:nth-child(10):checked ~ div label:nth-child(10) {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-right: 0;
+	color: inherit;
+}
+
+
+.tabs-vertical.tab-elements input[type=radio]:nth-child(1):checked ~ div label:nth-child(1):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(2):checked ~ div label:nth-child(2):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(3):checked ~ div label:nth-child(3):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(4):checked ~ div label:nth-child(4):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(5):checked ~ div label:nth-child(5):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(6):checked ~ div label:nth-child(6):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(7):checked ~ div label:nth-child(7):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(8):checked ~ div label:nth-child(8):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(9):checked ~ div label:nth-child(9):after,
+.tabs-vertical.tab-elements input[type=radio]:nth-child(10):checked ~ div label:nth-child(10):after {
+	content: "";
+	width: 2px;
+	background-color: #fff;
+	height: calc(100% + 2px);
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+
+
+/* Line Tabs */
+.line-tabs .tab-info {
+    border: none;
+}
+
+.line-tabs .responsive-tabs label {
+    border: none;
+	border-bottom: 2px solid #ccc;
+	margin-right: 1px;
+}
+
+.line-tabs .btn, .line-tabs a.btn, 
+.line-tabs input.btn, 
+.line-tabs label.btn, 
+.line-tabs button.btn, 
+.line-tabs .form-elements input[type=submit], 
+.line-tabs .form-elements input[type=reset] {
+	background: none;
+}
+
+
+.tab-elements.line-tabs input[type=radio]:nth-child(1):checked ~ .responsive-tabs label:nth-child(1),
+.tab-elements.line-tabs input[type=radio]:nth-child(2):checked ~ .responsive-tabs label:nth-child(2),
+.tab-elements.line-tabs input[type=radio]:nth-child(3):checked ~ .responsive-tabs label:nth-child(3),
+.tab-elements.line-tabs input[type=radio]:nth-child(4):checked ~ .responsive-tabs label:nth-child(4),
+.tab-elements.line-tabs input[type=radio]:nth-child(5):checked ~ .responsive-tabs label:nth-child(5),
+.tab-elements.line-tabs input[type=radio]:nth-child(6):checked ~ .responsive-tabs label:nth-child(6),
+.tab-elements.line-tabs input[type=radio]:nth-child(7):checked ~ .responsive-tabs label:nth-child(7),
+.tab-elements.line-tabs input[type=radio]:nth-child(8):checked ~ .responsive-tabs label:nth-child(8),
+.tab-elements.line-tabs input[type=radio]:nth-child(9):checked ~ .responsive-tabs label:nth-child(9),
+.tab-elements.line-tabs input[type=radio]:nth-child(10):checked ~ .responsive-tabs label:nth-child(10),
+.tab-elements.line-tabs input[type=radio]:nth-child(11):checked ~ .responsive-tabs label:nth-child(11),
+.tab-elements.line-tabs input[type=radio]:nth-child(12):checked ~ .responsive-tabs label:nth-child(12),
+.tab-elements.line-tabs input[type=radio]:nth-child(13):checked ~ .responsive-tabs label:nth-child(13),
+.tab-elements.line-tabs input[type=radio]:nth-child(14):checked ~ .responsive-tabs label:nth-child(14),
+.tab-elements.line-tabs input[type=radio]:nth-child(15):checked ~ .responsive-tabs label:nth-child(15),
+.tab-elements.line-tabs input[type=radio]:nth-child(16):checked ~ .responsive-tabs label:nth-child(16),
+.tab-elements.line-tabs input[type=radio]:nth-child(17):checked ~ .responsive-tabs label:nth-child(17),
+.tab-elements.line-tabs input[type=radio]:nth-child(18):checked ~ .responsive-tabs label:nth-child(18),
+.tab-elements.line-tabs input[type=radio]:nth-child(19):checked ~ .responsive-tabs label:nth-child(19),
+.tab-elements.line-tabs input[type=radio]:nth-child(20):checked ~ .responsive-tabs label:nth-child(20) {
+	background: none;
+	border: 0;
+	border-bottom: 2px solid $primary-color;
+	color: inherit;
+}
+
+
+@media all and (max-width: 1024px) {
+	
+	.responsive-tabs {
+		width:auto;
+		max-width: 100%;
+		overflow-y: hidden;
+		overflow-x: auto;
+		white-space: nowrap;
+		webkit-overflow-scrolling: touch;	
+	}
+	
+	.responsive-tabs {
+		margin-bottom: -1px;
+	}
+	
+	.tabs-vertical .tab-btns .btn {
+		font-size: 12px;
+	}
+	
+	.tabs-vertical > div {
+		width: 100px;
+	}
+	
+	.tabs-vertical .tab-info-wrap {
+		width: calc(100% - 98px);
+		margin-left: 98px;
+	}
+	
+	.tab-btns label.btn,
+	.tabs-vertical .tab-btns .btn {
+	    font-size: calc(1em + .2vw);
+	}
+
+	
+}
+
+@media all and (max-width: 500px) {
+	
+	.tabs-vertical > div {
+		width: 80px;
+	}
+	
+	.tabs-vertical .tab-info-wrap {
+		width: calc(100% - 78px);
+		margin-left: 78px;
+	}
+	
+}
