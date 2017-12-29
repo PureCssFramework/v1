@@ -1,6 +1,5 @@
 #Welcome to Version 1.0 of Pure CSS Framework
 ****************************************************************************************************************
-#
 This version contains the one CSS file you need in both minified and unminified versions "purecssframework.css"
 #
 Optional Files included: 
