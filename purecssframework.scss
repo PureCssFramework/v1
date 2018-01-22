@@ -179,33 +179,33 @@ small {
 
 /* Contextual Colors */
 .primary {
-	background-color: $primary-color !important;
-	color: $primary-text-in !important;
+	background-color: $primary-color;
+	color: $primary-text-in;
 }
 
 .secondary {
-	background-color: $secondary-color !important;
-	color: $secondary-text-in !important;
+	background-color: $secondary-color;
+	color: $secondary-text-in;
 }
 
 .info {
-	background-color: $info-color !important;;
-	color: $info-text-in !important;;
+	background-color: $info-color;
+	color: $info-text-in;
 }
 
 .success {
-	background-color: $success-color !important;
-	color: $success-text-in !important;
+	background-color: $success-color;
+	color: $success-text-in;
 }
 
 .warning {
-	background-color: $warning-color !important;
-	color: $warning-text-in !important;
+	background-color: $warning-color;
+	color: $warning-text-in;
 }
 
 .danger {
-	background-color: $danger-color !important;
-	color: $danger-text-in !important;
+	background-color: $danger-color;
+	color: $danger-text-in;
 }
 
 .primary-light,
