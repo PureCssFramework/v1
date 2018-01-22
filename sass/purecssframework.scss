@@ -2,7 +2,7 @@
 /*
 * Pure CSS Framework V1.0 (http://purecssframework.com)
 * Copyright 2017 Pure CSS Framework.
-* By Lowell Hausman 
+* By Lowell Hausman
 * Licensed under MIT 
 */
 
@@ -25,7 +25,7 @@ $success-color: rgba(57,181,74,1);
 $warning-color: rgba(247,188,29,1);
 $danger-color: rgba(186,9,9,1);
 
-$primary-color-hover:  rgba(28,107,228,.8);
+$primary-color-hover: rgba(28,107,228,.8);
 $secondary-color-hover: rgba(247,148,29,.8);
 $info-color-hover: rgba(0,174,239,.8);
 $success-color-hover: rgba(57,181,74,.8);
@@ -34,7 +34,7 @@ $danger-color-hover: rgba(186,9,9,.8);
 
 $primary-color-light:  rgba(28,107,228,.25);
 $secondary-color-light: rgba(247,148,29,.25);
-$info-color-light: rgba(107,140,214,.25);;
+$info-color-light: rgba(107,140,214,.25);
 $success-color-light: rgba(57,181,74,.25);
 $warning-color-light: rgba(247,188,29,.25);
 $danger-color-light: rgba(186,9,9,.25);
@@ -211,136 +211,136 @@ small {
 .primary-light,
 .primary-light td,
 .primary-light th {
-	background-color: $info-color-light;
+	background-color: $primary-color-light !important;
 }
 
 tr.primary-light {
-	background-color: transparent ;
+	background-color: transparent !important ;
 }
 
 .secondary-light,
 .secondary-light td,
 .secondary-light th  {
-	background-color: $secondary-color-light;
+	background-color: $secondary-color-light !important;
 }
 
 tr.secondary-light {
-	background-color: transparent ;
+	background-color: transparent !important ;
 }
 
 .info-light,
 .info-light td,
 .info-light th  {
-	background-color: $info-color-light;
+	background-color: $info-color-light !important;
 }
 
 tr.info-light {
-	background-color: transparent ;
+	background-color: transparent !important;
 }
 
 .success-light,
 .success-light td,
 .success-light th {
-	background-color: $success-color-light
+	background-color: $success-color-light !important;
 }
 
 tr.success-light {
-	background-color: transparent ;
+	background-color: transparent !important;
 }
 
 .warning-light,
 .warning-light td,
 .warning-light th {
-	background-color: $warning-color-light;
+	background-color: $warning-color-light !important;
 }
 
 tr.warning-light {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 .danger-light,
 .danger-light td,
 .danger-light th {
-	background-color: $danger-color-light;
+	background-color: $danger-color-light !important;
 }
 
 tr.danger-light {
-	background-color: transparent ;
+	background-color: transparent !important;
 }
 
 
 .text-primary {
-	color: rgba(28,107,228,1);
+	color: $primary-color !important;
 }
 
 .text-secondary {
-	color: rgba(247,148,29,1);
+	color: $secondary-color !important;
 }
 
 .text-info {
-	color: rgba(0,174,239,1);
+	color: $info-color !important;
 }
 
 .text-success {
-	color: rgba(57,181,74,1);
+	color: $success-color !important;
 }
 
 .text-warning {
-	color: rgba(167,116,6,1);
+	color: $warning-color !important;
 }
 
 .text-danger {
-	color: rgba(186,9,9,1);
+	color: $danger-color !important;
 }
 
 .text-white {
-	color: #fff ;
+	color: #fff !important;
 }
 
 .text-black {
-	color: #000 ;
+	color: #000 !important;
 }
 
 .text-muted {
-	color: rgba(150,150,150,.75);
+	color: rgba(150,150,150,.75) !important;
 }
 
 /* Border Colors */
 
 .border-primary {
-	border: 1px solid $primary-color;
+	border: 1px solid $primary-color !important;
 }
 
 .border-secondary {
-	border: 1px solid $secondary-color;
+	border: 1px solid $secondary-color !important;
 }
 
 .border-info {
-	border: 1px solid $info-color;
+	border: 1px solid $info-color !important;
 }
 
 .border-success {
-	border: 1px solid $success-color;
+	border: 1px solid $success-color !important;
 }
 
 .border-warning {
-	border: 1px solid $warning-color;
+	border: 1px solid $warning-color !important;
 }
 
 .border-danger {
-	border: 1px solid $danger-color;
+	border: 1px solid $danger-color !important;
 }
 
 .border-white {
-	border: 1px solid #fff;
+	border: 1px solid #fff !important;
 }
 
 .border-black {
-	border: 1px solid #000;
+	border: 1px solid #000 !important;
 }
 
 .border-muted {
-	border: 1px solid rgba(150,150,150,.75);
+	border: 1px solid rgba(150,150,150,.75) !important;
 }
 
 
