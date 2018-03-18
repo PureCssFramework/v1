@@ -1,4 +1,10 @@
-
+/*
+* Pure CSS Framework V1.0 (http://purecssframework.com)
+* Copyright 2017 Pure CSS Framework.
+* By Lowell Hausman
+* Licensed under MIT
+* theme-colors.css- update colors without using SASS
+*/
 
 body {
 	font-size: calc(10px + .2vw);
@@ -118,39 +124,23 @@ i.arrow-down {
 
 /*** Buttons ***/
 
-.btn,
-a.btn,
-input.btn,
-label.btn,
-.form-elements input[type=submit],
-.form-elements input[type=reset] {
+.btn {
 	color: #333;
 	background-color: #ccc;
 }
 
 .btn:hover,
-label.btn:hover,
-a.btn:hover,
-input.btn:hover,
-.form-elements input[type=submit]:hover,
-.form-elements input[type=reset]:hover,
 .btn.active {
 	cursor: pointer;
 	background-color: #eee;
 }
 
-.btn-ghost,
-label.btn-ghost,
-a.btn-ghost,
-input.btn-ghost {
+.btn-ghost {
 	color: #333;
 	border: 1px solid #666;
 }
 
 .btn-ghost:hover,
-label.btn-ghost:hover,
-a.btn-ghost:hover,
-input.btn-ghost:hover,
 .btn-ghost.active {
 	border-color: #000;
 	color: #000;
@@ -158,142 +148,76 @@ input.btn-ghost:hover,
 }
 
 /* Ghost on dark BG*/
-.btn-ghost.inverted,
-label.btn-ghost.inverted,
-a.btn-ghost.inverted,
-input.btn-ghost.inverted {
+.btn-ghost.inverted {
 	color: #fff;
 	border: 1px solid #fff;
 	background-color: rgba(255,255,255,.1);
 }
 
 .btn-ghost.inverted:hover,
-label.btn-ghost.inverted:hover,
-a.btn-ghost.inverted:hover,
-input.btn-ghost.inverted:hover,
 .btn-ghost.inverted.active {
 	border-color: #fff;
 	background-color: rgba(255,255,255,.5);
 }
 
-.btn.primary,
-a.btn.primary,
-label.btn.primary,
-input.btn.primary,
-.form-elements input[type=submit].btn.primary,
-.form-elements input[type=reset].btn.primary {
+.btn.primary {
 	color: #fff;
 	background-color: rgba(28,107,228,1);
 }
 
 .btn.primary:hover,
-a.btn.primary:hover,
-label.btn.primary:hover,
-input.btn.primary:hover,
-.form-elements input[type=submit].btn.primary:hover,
-.form-elements input[type=reset].btn.primary:hover,
 .btn.primary.active {
 	background-color: rgba(28,107,228,.7);
 }
 
-.btn.secondary,
-a.btn.secondary,
-label.btn.secondary,
-input.btn.secondary,
-.form-elements input[type=submit].btn.secondary,
-.form-elements input[type=reset].btn.secondary {
+.btn.secondary {
 	color: #fff;
 	background-color:  rgba(247,148,29,1);
 }
 
 .btn.secondary:hover,
-a.btn.secondary:hover,
-label.btn.secondary:hover,
-input.btn.secondary:hover,
-.form-elements input[type=submit].btn.secondary:hover,
-.form-elements input[type=reset].btn.secondary:hover,
 .btn.secondary.active {
 	background-color: rgba(247,148,29,.7);
 
 }
 
-.btn.info,
-a.btn.info,
-label.btn.info,
-input.btn.info,
-.form-elements input[type=submit].btn.info,
-.form-elements input[type=reset].btn.info {
+.btn.info {
 	color: #fff;
 	background-color: rgba(0,174,239,1);
 }
 
 .btn.info:hover,
-a.btn.info:hover,
-label.btn.info:hover,
-input.btn.info:hover,
-.form-elements input[type=submit].btn.info:hover,
-.form-elements input[type=reset].btn.info:hover,
 .btn.info.active {
 	background-color: rgba(0,174,239,.7);
 }
 
-.btn.success,
-a.btn.success,
-label.btn.success,
-input.btn.success,
-.form-elements input[type=submit].btn.success,
-.form-elements input[type=reset].btn.success {
+.btn.success {
 	color: #fff;
 	background-color: rgba(57,181,74,1);
 }
 
 .btn.success:hover,
-a.btn.success:hover,
-label.btn.success:hover,
-input.btn.success:hover,
-.form-elements input[type=submit].btn.success:hover,
-.form-elements input[type=reset].btn.success:hover,
 .btn.success.active {
 	background-color: rgba(57,181,74,.7);
 }
 
-.btn.warning,
-a.btn.warning,
-label.btn.warning,
-input.btn.warning,
-.form-elements input[type=submit].btn.warning,
-.form-elements input[type=reset].btn.warning {
+.btn.warning {
 	color: #5c2703;
 	background-color: rgba(247,188,29,1);
 }
 
 .btn.warning:hover,
-a.btn.warning:hover,
-label.btn.warning:hover,
-input.btn.warning:hover,
-.form-elements input[type=submit].btn.warning:hover,
-.form-elements input[type=reset].btn.warning:hover,
 .btn.warning.active {
 	background-color: rgba(247,188,29,.7);
 }
 
 
-.btn.danger,
-a.btn.danger,
-label.btn.danger,
-input.btn.danger,
-.form-elements input[type=submit].btn.danger,
-.form-elements input[type=reset].btn.danger {
+.btn.danger {
 	color: #fff;
 	background-color: rgba(186,9,9,1);
 }
 
-.btn.danger:hover,
-a.btn.danger:hover,
-label.btn.danger:hover,
-input.btn.danger:hover,
-.form-elements input[type=submit].btn.danger:hover,
-.form-elements input[type=reset].btn.danger:hover,
+.btn.danger:hover
 .btn.danger.active {
 	background-color: rgba(186,9,9,.7);
 }

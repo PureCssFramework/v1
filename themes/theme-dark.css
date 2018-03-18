@@ -1,8 +1,9 @@
 /*
-* Pure CSS Framework V1.0 (http://purecssframework.com) Dark Theme CSS
+* Pure CSS Framework V1.0 (http://purecssframework.com)
 * Copyright 2017 Pure CSS Framework.
-* By Lowell Hausman 
-* Licensed under MIT 
+* By Lowell Hausman
+* Licensed under MIT
+* theme-dark.css- update main background color to dark without using SASS
 */
 
 body.dark {
@@ -25,11 +26,7 @@ body.dark {
 	color: #eee;
 }
 
-.dark .form-elements input[type=text],
-.dark .form-elements input[type=email],
-.dark .form-elements input[type=password],
-.dark .form-elements input[type=number],
-.dark .form-elements input[type=address],
+.dark .form-elements input:not(.btn),
 .dark .form-elements select,
 .dark .form-elements textarea {
 	background-color: #111;    
@@ -37,13 +34,9 @@ body.dark {
 	color: #eee;
 }
 
-.dark .form-line-design .form-elements input[type=text], 
-.dark .form-line-design .form-elements input[type=email], 
-.dark .form-line-design .form-elements input[type=password], 
-.dark .form-line-design .form-elements input[type=number], 
-.dark .form-line-design .form-elements input[type=address], 
+.dark .form-line-design .form-elements input:not(.btn),
 .dark .form-line-design .form-elements select,
-.dark .form-line-design .form-elements textarea {
+.dark .form-line-design .form-elements textarea  {
 	border-width: 0 0 1px 0;
 	background-color: transparent;
 }
