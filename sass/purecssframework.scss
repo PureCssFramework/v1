@@ -6,10 +6,11 @@
 * Licensed under MIT 
 */
 
+
 @import 'reset';
 
 $font-stack: helvetica, sans-serif;
-$font-size: calc(.7em + .2vw);
+$font-size: calc(.8em + .1vw);
 $line-height: 1.4em;
 $font-size-small: calc(.5em + .1vw);
 $font-color: #222;
@@ -948,13 +949,13 @@ i.arrow-down {
 }
 
 
-/* Imports */
+/* CSS Common Imports */
 @import 'grid';
 @import 'tables';
 @import 'buttons';
 @import 'forms';
 
-/* Component Imports */
+/* CSS Component Imports */
 @import 'components/nav-menu';
 @import 'components/nav-side';
 @import 'components/tabs';

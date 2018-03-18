@@ -14,13 +14,8 @@ $btn-warning-text-color: #fff;
 $btn-danger-text-color: #fff;
 
 
-.btn,
-a.btn,
-input.btn,
-label.btn,
-button.btn,
-.form-elements input[type=submit],
-.form-elements input[type=reset] {
+
+.btn {
 	display: inline-block;
 	padding: $button-padding;
 	border: 0;
@@ -38,24 +33,13 @@ button.btn,
 }
 
 .btn:hover,
-label.btn:hover,
-a.btn:hover,
-input.btn:hover,
-button.btn:hover,
-.form-elements input[type=submit]:hover,
-.form-elements input[type=reset]:hover,
 .btn.active {
 	cursor: pointer;
 	background-color: #eee;
 	transition: background-color .1s;
 }
 
-
-.btn-ghost,
-label.btn-ghost,
-a.btn-ghost,
-input.btn-ghost,
-button.btn-ghost {
+.btn-ghost {
 	display: inline-block;
 	padding: $button-padding;
 	font-size: $button-font-size;
@@ -70,12 +54,7 @@ button.btn-ghost {
 	transition: background-color .3s;
 }
 
-.btn-ghost:hover,
-label.btn-ghost:hover,
-a.btn-ghost:hover,
-input.btn-ghost:hover,
-.btn-ghost.active,
-button.btn-ghost:hover {
+.btn-ghost:hover {
 	cursor: pointer;
 	border-color: #000;
 	color: #000;
@@ -84,82 +63,43 @@ button.btn-ghost:hover {
 }
 
 /* Ghost on dark BG */
-.btn-ghost.inverted,
-label.btn-ghost.inverted,
-a.btn-ghost.inverted,
-input.btn-ghost.inverted,
-button.btn-ghost.inverted {
+.btn-ghost.inverted {
 	color: #fff;
 	border: 1px solid #fff;
 	background-color: rgba(255,255,255,.1);
 }
 
-.btn-ghost.inverted:hover,
-label.btn-ghost.inverted:hover,
-a.btn-ghost.inverted:hover,
-input.btn-ghost.inverted:hover,
-button.btn-ghost.inverted:hover,
-.btn-ghost.inverted.active {
+.btn-ghost.inverted:hover {
 	border-color: #fff;
 	transition: background-color .3s;
 	background-color: rgba(255,255,255,.5);
 }
 
-.btn.rounded-more-corners,
-label.btn.rounded-more-corners,
-a.btn.rounded-more-corners,
-input.btn.rounded-more-corners,
-button.btn.rounded-more-corners,
-.form-elements input[type=submit].rounded-more-corners,
-.form-elements input[type=reset].rounded-more-corners {
+.btn.rounded-more-corners {
 	border-radius: 12px;
 }
 
-.btn.rounded-corners,
-label.btn.rounded-corners,
-a.btn.rounded-corners,
-input.btn.rounded-corners,
-button.btn.rounded-corners,
-.form-elements input[type=submit].rounded-corners,
-.form-elements input[type=reset].rounded-corners {
+.btn.rounded-corners {
 	border-radius: 5px;
 }
 
 
-.btn.btn-xs,
-a.btn.btn-xs,
-label.btn.btn-xs,
-button.btn.btn-xs,
-.btn-ghost.btn-xs {
+.btn.btn-xs {
 	padding: 4px 6px 4px 6px;
 	font-size: calc(.6em + .2vw);
 }
 
-.btn.btn-sm,
-a.btn.btn-sm,
-label.btn.btn-sm,
-button.btn-sm,
-.btn-ghost.btn-sm,
-.btn-ghost.btn-sm {
+.btn.btn-sm {
 	padding: 8px 8px 8px 8px;
 	font-size: calc(.7em + .2vw);
 }
 
-.btn.btn-lg,
-a.btn.btn-lg,
-label.btn.btn-lg,
-button.btn.btn-lg,
-.btn-ghost.btn-lg,
-.btn-ghost.btn-lg {
+.btn.btn-lg {
 	padding: 16px 20px 16px 20px;
 	font-size: calc(1em + .2vw);
 }
 
-.btn.btn-xl,
-a.btn.btn-xl,
-label.btn.btn-xl,
-button.btn.btn-xl,
-.btn-ghost.btn-xl {
+.btn.btn-xl {
 	padding: 30px 40px 30px 40px;
 	font-size: calc(1.2em + .2vw);
 }
@@ -170,91 +110,43 @@ button.btn.btn-xl,
 	font-size: $button-font-size;
 }
 
-.btn.primary,
-a.btn.primary,
-label.btn.primary,
-input.btn.primary,
-button.btn.primary,
-.form-elements input[type=submit].btn.primary,
-.form-elements input[type=reset].btn.primary {
+.btn.primary {
 	color: $btn-primary-text-color;
 	background-color: $primary-color;
 }
 
 .btn.primary:hover,
-a.btn.primary:hover,
-label.btn.primary:hover,
-input.btn.primary:hover,
-button.btn.primary:hover,
-.form-elements input[type=submit].btn.primary:hover,
-.form-elements input[type=reset].btn.primary:hover,
 .btn.primary.active {
 	background-color: $primary-color-hover;
 }
 
-.btn.secondary,
-a.btn.secondary,
-label.btn.secondary,
-input.btn.secondary,
-button.btn.secondary,
-.form-elements input[type=submit].btn.secondary,
-.form-elements input[type=reset].btn.secondary {
+.btn.secondary {
 	color: $btn-secondary-text-color;
 	background-color:  $secondary-color;
 }
 
 .btn.secondary:hover,
-a.btn.secondary:hover,
-label.btn.secondary:hover,
-input.btn.secondary:hover,
-button.btn.secondary:hover,
-.form-elements input[type=submit].btn.secondary:hover,
-.form-elements input[type=reset].btn.secondary:hover,
 .btn.secondary.active {
 	background-color: $secondary-color-hover;
 
 }
 
-.btn.info,
-a.btn.info,
-label.btn.info,
-input.btn.info,
-button.btn.info,
-.form-elements input[type=submit].btn.info,
-.form-elements input[type=reset].btn.info {
+.btn.info {
 	color: $btn-info-text-color;
 	background-color: $info-color;
 }
 
 .btn.info:hover,
-a.btn.info:hover,
-label.btn.info:hover,
-input.btn.info:hover,
-button.btn.info:hover,
-.form-elements input[type=submit].btn.info:hover,
-.form-elements input[type=reset].btn.info:hover,
 .btn.info.active {
 	background-color: $info-color-hover;
 }
 
-.btn.success,
-a.btn.success,
-label.btn.success,
-input.btn.success,
-button.btn.success,
-.form-elements input[type=submit].btn.success,
-.form-elements input[type=reset].btn.success {
+.btn.success {
 	color: $btn-success-text-color;
 	background-color: $success-color;
 }
 
 .btn.success:hover,
-a.btn.success:hover,
-label.btn.success:hover,
-input.btn.success:hover,
-button.btn.success:hover,
-.form-elements input[type=submit].btn.success:hover,
-.form-elements input[type=reset].btn.success:hover,
 .btn.success.active {
 	background-color: $success-color-hover;
 }
@@ -294,83 +186,41 @@ button.btn.danger,
 }
 
 .btn.danger:hover,
-a.btn.danger:hover,
-label.btn.danger:hover,
-input.btn.danger:hover,
-button.btn.danger:hover,
-.form-elements input[type=submit].btn.danger:hover,
-.form-elements input[type=reset].btn.danger:hover,
 .btn.danger.active {
 	background-color: $danger-color-hover;
 }
 
 
-.btn.black,
-a.btn.black,
-label.btn.black,
-input.btn.black,
-button.btn.black,
-.form-elements input[type=submit].btn.black,
-.form-elements input[type=reset].btn.black {
+.btn.black {
 	color: #fff;
 	background-color: rgba(0,0,0,1);
 }
 
 .btn.black:hover,
-a.btn.black:hover,
-label.btn.black:hover,
-input.btn.black:hover,
-button.btn.black:hover,
-.form-elements input[type=submit].btn.black:hover,
-.form-elements input[type=reset].btn.black:hover,
 .btn.black.active {
 	background-color: rgba(0,0,0,.7);
 }
 
-.btn.white,
-a.btn.white,
-label.btn.white,
-input.btn.white,
-button.btn.white,
-.form-elements input[type=submit].btn.white,
-.form-elements input[type=reset].btn.white {
+.btn.white {
 	color: #000;
 	background-color: rgba(255,255,255,1);
 	border: 1px solid #efefef;
 }
 
 .btn.white:hover,
-a.btn.white:hover,
-label.btn.white:hover,
-input.btn.white:hover,
-button.btn.white:hover,
-.form-elements input[type=submit].btn.white:hover,
-.form-elements input[type=reset].btn.white:hover,
 .btn.white.active {
 	background-color: rgba(255,255,255,.7);
 }
 
 
-.btn.trans,
-a.btn.trans,
-label.btn.trans,
-input.btn.trans,
-button.btn.trans,
-.form-elements input[type=submit].btn.trans,
-.form-elements input[type=reset].btn.trans {
+.btn.trans {
 	color: inherit;
 	background-color: transparent;
 	color: $primary-color;
 	text-decoration: $link-decoration;
 }
 
-.btn.trans:hover,
-a.btn.trans:hover,
-label.btn.trans:hover,
-input.btn.trans:hover,
-button.btn.trans:hover,
-.form-elements input[type=submit].btn.trans:hover,
-.form-elements input[type=reset].btn.trans:hover {
+.btn.trans:hover {
 	color: $primary-color-hover;
 	text-decoration: none;
 }

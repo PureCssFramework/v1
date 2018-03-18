@@ -12,11 +12,7 @@ $form-border-focus:  1px solid #ccc;
 	margin-bottom: 10px;
 }
 
-.form-elements input[type=text],
-.form-elements input[type=email],
-.form-elements input[type=password],
-.form-elements input[type=number],
-.form-elements input[type=address],
+.form-elements input:not(.btn),
 .form-elements select,
 .form-elements textarea {
 	width: 100%;
@@ -41,11 +37,7 @@ $form-border-focus:  1px solid #ccc;
 	padding-top: 3px;
 }
 
-.form-elements input[type=text]:focus,
-.form-elements input[type=email]:focus,
-.form-elements input[type=password]:focus,
-.form-elements input[type=number]:focus,
-.form-elements input[type=address]:focus,
+.form-elements input:not(.btn):focus,
 .form-elements select:focus,
 .form-elements textarea:focus {
 	border: $form-background-focus;
@@ -109,11 +101,7 @@ $form-border-focus:  1px solid #ccc;
 	padding: 0;	
 }
 
-.form-condensed .form-elements input[type=text],
-.form-condensed .form-elements input[type=email],
-.form-condensed .form-elements input[type=password],
-.form-condensed .form-elements input[type=number],
-.form-condensed .form-elements input[type=address],
+.form-condensed .form-elements input:not(.btn),
 .form-condensed .form-elements label,
 .form-condensed .form-elements select,
 .form-condensed .form-elements textarea {
@@ -138,11 +126,7 @@ $form-border-focus:  1px solid #ccc;
 
 
 /* Inline */
-.form-inline.form-elements input[type=text],
-.form-inline.form-elements input[type=email],
-.form-inline.form-elements input[type=password],
-.form-inline.form-elements input[type=number],
-.form-inline.form-elements input[type=address],
+.form-inline.form-elements input:not(.btn),
 .form-inline.form-elements label,
 .form-inline.form-elements select {
 	float: left;
@@ -156,11 +140,7 @@ $form-border-focus:  1px solid #ccc;
 }
 
 /* Readonly */
-.form-elements input[type=text].form-read-only,
-.form-elements input[type=email].form-read-only,
-.form-elements input[type=password].form-read-only,
-.form-elements input[type=number].form-read-only,
-.form-elements input[type=address].form-read-only,
+.form-elements input:not(.btn).form-read-only,
 .form-elements select.form-read-only,
 .form-elements textarea.form-read-only {
     background-color: #eee;
@@ -168,12 +148,6 @@ $form-border-focus:  1px solid #ccc;
 }
 
 /* disabled */
-fieldset[disabled] .form-elements input[type=text],
-fieldset[disabled] .form-elements input[type=email],
-fieldset[disabled] .form-elements input[type=password],
-fieldset[disabled] .form-elements input[type=number],
-fieldset[disabled] .form-elements input[type=address],
-fieldset[disabled] .form-elements select,
 fieldset[disabled] .form-elements input,
 fieldset[disabled] .form-elements textarea,
 fieldset[disabled] .form-elements .btn,
@@ -201,11 +175,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	margin-bottom: 10px;
 }
 
-.form-elements.elements-xl input[type=text],
-.form-elements.elements-xl input[type=email],
-.form-elements.elements-xl input[type=password],
-.form-elements.elements-xl input[type=number],
-.form-elements.elements-xl input[type=address],
+.form-elements.elements-xl input:not(.btn),
 .form-elements.elements-xl select,
 .form-elements.elements-xl textarea {
 	height: 2.5em;
@@ -231,11 +201,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	margin-bottom: 10px;
 }
 
-.form-elements.elements-lg input[type=text],
-.form-elements.elements-lg input[type=email],
-.form-elements.elements-lg input[type=password],
-.form-elements.elements-lg input[type=number],
-.form-elements.elements-lg input[type=address],
+.form-elements.elements-lg input:not(.btn),
 .form-elements.elements-lg select,
 .form-elements.elements-lg textarea {
 	font-size: calc(14px + .2vw);
@@ -260,11 +226,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	margin-bottom: 10px;
 }
 
-.form-elements.elements-sm input[type=text],
-.form-elements.elements-sm input[type=email],
-.form-elements.elements-sm input[type=password],
-.form-elements.elements-sm input[type=number],
-.form-elements.elements-sm input[type=address],
+.form-elements.elements-sm input:not(.btn),
 .form-elements.elements-sm select,
 .form-elements.elements-sm textarea {
 	height: 2em;
@@ -290,11 +252,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	margin-bottom: 10px;
 }
 
-.form-elements.elements-xs input[type=text],
-.form-elements.elements-xs input[type=email],
-.form-elements.elements-xs input[type=password],
-.form-elements.elements-xs input[type=number],
-.form-elements.elements-xs input[type=address],
+.form-elements.elements-xs input:not(.btn),
 .form-elements.elements-xs select,
 .form-elements.elements-xs textarea {
 	height: 1.8em;
@@ -392,11 +350,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	cursor: not-allowed;
 }
 
-.form-line-design .form-elements input[type=text], 
-.form-line-design .form-elements input[type=email], 
-.form-line-design .form-elements input[type=password], 
-.form-line-design .form-elements input[type=number], 
-.form-line-design .form-elements input[type=address], 
+.form-line-design .form-elements input:not(.btn),  
 .form-line-design .form-elements select,
 .form-line-design .form-elements textarea {
 	border: 0;
@@ -406,11 +360,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	background-color: transparent;
 }
 
-.form-line-design .form-elements input[type=text]:focus, 
-.form-line-design .form-elements input[type=email]:focus, 
-.form-line-design .form-elements input[type=password]:focus, 
-.form-line-design .form-elements input[type=number]:focus, 
-.form-line-design .form-elements input[type=address]:focus, 
+.form-line-design .form-elements input:not(.btn):focus, 
 .form-line-design .form-elements select:focus,
 .form-line-design .form-elements textarea:focus {
 	border-bottom: 1px solid $primary-color;
@@ -482,11 +432,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	
 	
 	/* Inline */
-	.form-inline.form-elements input[type=text],
-	.form-inline.form-elements input[type=email],
-	.form-inline.form-elements input[type=password],
-	.form-inline.form-elements input[type=number],
-	.form-inline.form-elements input[type=address],
+	.form-inline.form-elements input:not(.btn),
 	.form-inline.form-elements label,
 	.form-inline.form-elements select {
 		float: none;
