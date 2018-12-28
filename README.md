@@ -1,4 +1,4 @@
-#Pure CSS Framework
+Pure CSS Framework
 
 Web UI and layout design made with pure CSS. No Javascript requirements at all!
 
