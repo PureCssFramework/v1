@@ -1,17 +1,27 @@
 
-$button-padding: .8em;
+$button-padding: 0.55em 1.5em;
 $button-font-size: calc(.85em + .2vw);
 $button-font-size-mobile: calc(1em + .2vw);
 $arrow-size: 4px;
 $arrow-color: rgb(51, 51, 51);
 $arrow-contextual-color: rgb(255, 255, 255);
+$btn-rounded-corners: 2em;
 
 $btn-primary-text-color:  #fff;
 $btn-secondary-text-color: #fff;
-$btn-info-text-color: #fff;
+$btn-info-text-color: rgba(7,120,173,1);
 $btn-success-text-color: #fff;
 $btn-warning-text-color: #fff;
 $btn-danger-text-color: #fff;
+$btn-vip-text-color: #333;
+
+$drop-menu-bg: #fff;
+$drop-menu-rounded-corners: 10px;
+$drop-menu-border: none;
+$drop-menu-shadow: 0 6px 12px rgba(0,0,0,.175);
+$drop-menu-link-color: #666;
+$drop-menu-link-color-hover: $primary-color;
+$drop-menu-link-bg-hover: rgba(255,255,255,.3);
 
 
 
@@ -27,7 +37,7 @@ $btn-danger-text-color: #fff;
 	text-align: center;
 	margin: 3px 0 3px 0px;
 	box-sizing: border-box;
-	border-radius: $rounded-corners;
+	border-radius: $btn-rounded-corners;
 	line-height: normal;
 	-webkit-appearance: none;
 }
@@ -43,36 +53,50 @@ $btn-danger-text-color: #fff;
 	display: inline-block;
 	padding: $button-padding;
 	font-size: $button-font-size;
-	color: #333;
-	border: 1px solid #666;
+	color: #666;
+	border: 1px solid #888;
 	background-color: transparent;
 	text-decoration: none;
 	transition: all .3s;
 	margin: 3px 0 3px 0px;
 	box-sizing: border-box;
-	border-radius: $rounded-corners;
+	border-radius: $btn-rounded-corners;
 	transition: background-color .3s;
 }
 
 .btn-ghost:hover {
 	cursor: pointer;
-	border-color: #000;
-	color: #000;
 	background-color: rgba(0,0,0,.1);
 	transition: all .1s;
 }
 
-/* Ghost on dark BG */
-.btn-ghost.inverted {
-	color: #fff;
+.dark .btn-ghost {
 	border: 1px solid #fff;
-	background-color: rgba(255,255,255,.1);
 }
 
+.dark .btn-ghost:hover {
+	color: #fff;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.dark .btn-ghost.dynamic,
+.btn-ghost.inverted {
+	color: rgb(170, 170, 170);
+	border: 1px solid #666;
+	background-color: rgba(255,255,255,.05);
+}
+
+.dark .btn-ghost.dynamic:hover,
 .btn-ghost.inverted:hover {
-	border-color: #fff;
-	transition: background-color .3s;
-	background-color: rgba(255,255,255,.5);
+	border-color: #999;
+    color: #eee;
+	transition: all .3s;
+	background-color: rgba(255,255,255,.25);
+}
+
+.dark .btn-ghost.dynamic i.arrow-down {
+	border-left: 1px solid rgb(151, 151, 151);
+    border-bottom: 1px solid rgb(151, 151, 151);
 }
 
 .btn.rounded-more-corners {
@@ -85,17 +109,17 @@ $btn-danger-text-color: #fff;
 
 
 .btn.btn-xs {
-	padding: 4px 6px 4px 6px;
+	padding: 4px 10px 4px 10px;
 	font-size: calc(.6em + .2vw);
 }
 
 .btn.btn-sm {
-	padding: 8px 8px 8px 8px;
+	padding: 8px 12px 8px 12px;
 	font-size: calc(.7em + .2vw);
 }
 
 .btn.btn-lg {
-	padding: 16px 20px 16px 20px;
+	padding: 16px 24px 16px 24px;
 	font-size: calc(1em + .2vw);
 }
 
@@ -149,6 +173,19 @@ $btn-danger-text-color: #fff;
 .btn.success:hover,
 .btn.success.active {
 	background-color: $success-color-hover;
+}
+
+.btn.vip {
+	color: $btn-vip-text-color;
+	background: $vip-color;
+	text-shadow: 1px 1px rgba(255,255,255,.5);
+	transition: all .3s ease-in-out;
+}
+
+.btn.vip:hover,
+.btn.vip.active {
+	background-color: $vip-color-hover;
+	transition: all .3s ease-in-out;
 }
 
 .btn.warning,
@@ -247,7 +284,7 @@ button.btn.danger,
 	cursor: pointer;
 	height: 100%;
 	display: block;
-	padding: 0px 12px 0px 12px;
+	/* padding: 0px 12px 0px 12px; */
 }
 
 .drop-menu {
@@ -259,35 +296,44 @@ button.btn.danger,
 	left: 0;
 	position: absolute;
 	z-index: 91;
-	background-color: #fff;
-	border: 1px solid #c9c9c9;
+	background-color: $drop-menu-bg;
+	border: $drop-menu-border;
+	border-radius: $drop-menu-rounded-corners;
 	min-width: 100%;
 	line-height: 30px;
-	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: $drop-menu-shadow;
+	cursor: default;
 }
 
-
-.drop-menu.auto-scroll {
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
-	max-height: 150px;	
+.navbar-links .drop-menu {
+	border-radius: 0 0 $drop-menu-rounded-corners $drop-menu-rounded-corners;
 }
 
-.drop-menu.auto-scroll::-webkit-scrollbar {
-	width: .8em;
-}
- 
-.drop-menu.auto-scroll::-webkit-scrollbar-thumb {
-	background: rgba(255,255,255,.5); 
-}
+@media all and (min-width: 1025px) {
 
-.drop-menu.auto-scroll::-webkit-scrollbar-track {
-	background:  rgba(150,150,150,.6);
-}
+	.drop-menu.auto-scroll {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		max-height: 150px;	
+	}
 
-.drop-menu.auto-scroll::-webkit-scrollbar-button {
-	background:  rgba(150,150,150,.2);
-	height: 10px;
+	.drop-menu.auto-scroll::-webkit-scrollbar {
+		width: .8em;
+	}
+
+	.drop-menu.auto-scroll::-webkit-scrollbar-thumb {
+		background: rgba(255,255,255,.5); 
+	}
+
+	.drop-menu.auto-scroll::-webkit-scrollbar-track {
+		background:  rgba(150,150,150,.6);
+	}
+
+	.drop-menu.auto-scroll::-webkit-scrollbar-button {
+		background:  rgba(150,150,150,.2);
+		height: 10px;
+	}
+	
 }
 
 /* Dropmenu locations on different sizes */
@@ -324,14 +370,13 @@ button.btn.danger,
 	display: inline-block;
 }
 
-
 .drop-menu-input:checked  ~ .full-screen {
 	display: block;
 }
 
 .drop-menu li.sep {
 	height: 1px;
-	background-color: #ccc;
+	background-color: #666;
 }
 
 
@@ -352,11 +397,9 @@ button.btn.danger,
 	display: inline-block;
 }
 
-
-
 .drop-menu-input:checked ~ i.arrow-down {
 	transform: rotate(135deg);
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 	transition: all .1s ease-in-out;
 }
 
@@ -369,19 +412,19 @@ button.btn.danger,
 .drop-menu-input:checked ~ i.arrow-down.no-animation,
 .drop-menu-input ~ i.arrow-down.no-animation {
 	transform: rotate(-45deg) !important;
-	margin-bottom: 4px !important;
+	margin-bottom: 3px !important;
 }
 
 .hover-menu:hover i.arrow-down.no-animation,
 .hover-menu:hover .drop-menu-input:checked i.arrow-down.no-animation{
 	transform: rotate(-45deg) !important;
-	margin-bottom: 4px !important;
+	margin-bottom: 3px !important;
 }
 
 
 .drop-menu-input:checked ~ i.arrow-down {
 	transform: rotate(135deg);
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 	transition: all .1s ease-in-out;
 }
 
@@ -396,22 +439,45 @@ button.btn.danger,
 	list-style: none;
 }
 
-.drop-menu a {
+.drop-menu a:not(.btn) {
 	display: block;
 	text-align: left;
 	padding: 6px;
 	white-space: nowrap;
 	text-decoration: none;
-	color: #333333;
+	color: $drop-menu-link-color;
 }
 
 .navbar-links > .has-drop-menu label a {
 	text-decoration: none;
 }
 
-.drop-menu a:hover {
-	color: #000;
-	background-color: #eee;
+.navbar-links > .has-drop-menu:hover:after {
+	display: none;
+}
+
+.drop-menu a:not(.btn):hover {
+	color: $drop-menu-link-color-hover;
+	background-color: $drop-menu-link-bg-hover;
+}
+
+.drop-menu-input:checked ~ .menu-label:before {
+	content: "";
+	position:absolute;
+	bottom: -20px;
+	left:0;
+	width: 100%;
+	height: 24px;
+	background-color: $drop-menu-bg;
+	pointer-events: none;
+	z-index: -1;
+	bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-links .drop-menu-input:checked ~ .menu-label:before {
+	display: none;
 }
 
 /* icons */
@@ -422,7 +488,7 @@ i.arrow-down {
 	border-left: 1px solid $arrow-color;
 	border-bottom: 1px solid $arrow-color;
 	transform: rotate(-45deg);
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	margin-left: 3px;
 	transition: all .1s ease-in-out;
 }
@@ -445,7 +511,7 @@ i.arrow-up {
 	border-left: 1px solid $arrow-color;
 	transform: rotate(45deg);
 	margin-left: 3px;
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 	transition: all .1s ease-in-out;
 }
 
@@ -609,19 +675,19 @@ i.arrow-left {
 .has-drop-menu.hover-menu.drop-menu-top:hover .drop-menu-input:checked ~ i.arrow-down,
 .has-drop-menu.drop-menu-top:hover .drop-menu-input:checked ~ i.arrow-down{
 	transform: rotate(-45deg);
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 }
 
 .hover-menu.drop-menu-top .drop-menu-input:checked ~ i.arrow-down {
 	transform: rotate(135deg);
 	transition: all .1s ease-in-out;
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 }
 
 .drop-menu-top .drop-menu-input:checked ~ i.arrow-down.no-animation,
 .drop-menu-top .drop-menu-input ~ i.arrow-down.no-animation {
 	transform: rotate(135deg) !important;
-	margin-bottom: 1px;
+	margin-bottom: 3px;
 }
 
 .drop-menu-top .hover-menu:hover i.arrow-down.no-animation,
@@ -706,12 +772,12 @@ i.arrow-left {
 
 .btn-group.rounded-sides .btn:first-child,
 .btn-group.rounded-sides a.btn:first-child{ 
-	border-radius:  $rounded-corners 0 0 $rounded-corners;
+	border-radius:  $btn-rounded-corners 0 0 $btn-rounded-corners;
 }
 
 .btn-group.rounded-sides .btn:last-child,
 .btn-group.rounded-sides a.btn:last-child { 
-	border-radius:  0 $rounded-corners $rounded-corners 0;
+	border-radius:  0 $btn-rounded-corners $btn-rounded-corners 0;
 }
 
 .responsive-btn-group {
@@ -760,37 +826,37 @@ i.arrow-left {
 
 @keyframes primaryGlow {  
 	0% { background-color: $primary-color; }
-    50% { background-color: $primary-color-light; }
+    50% { background-color: $primary-color-25; }
     100% { background-color: $primary-color; }
 }
 
 @keyframes secondaryGlow {  
 	0% { background-color: $secondary-color; }
-    50% { background-color: $secondary-color-light; }
+    50% { background-color: $secondary-color-25; }
     100% { background-color: $secondary-color; }
 }
 
 @keyframes infoGlow {  
 	0% { background-color: $info-color; }
-    50% { background-color: $info-color-light; }
+    50% { background-color: $info-color-25; }
     100% { background-color: $info-color; }
 }
 
 @keyframes successGlow {  
 	0% { background-color: $success-color; }
-    50% { background-color: $success-color-light; }
+    50% { background-color: $success-color-25; }
     100% { background-color: $success-color; }
 }
 
 @keyframes warningGlow {  
 	0% { background-color: $warning-color; }
-    50% { background-color: $warning-color-light; }
+    50% { background-color: $warning-color-25; }
     100% { background-color: $warning-color; }
 }
 
 @keyframes dangerGlow {  
 	0% { background-color: $danger-color; }
-    50% { background-color: $danger-color-light; }
+    50% { background-color: $danger-color-25; }
     100% { background-color: $danger-color; }
 }
 
@@ -826,7 +892,7 @@ i.arrow-left {
 		padding-left: 0px;
 	}
 	
-	.navbar nav div.has-drop-menu a {
+	.navbar nav div.has-drop-menu > a {
 		height: 40px;
 		min-height: 40px;
 		line-height: 30px;

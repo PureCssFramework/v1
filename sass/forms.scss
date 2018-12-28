@@ -1,11 +1,13 @@
 
-$form-padding: 4px;
+
+$form-padding: 4px 15px;
 $form-label-padding: 6px 4px 2px 0px;
 $form-font-size: calc(.2em + 12px);
 $form-background: #fff;
 $form-border:  1px solid #ccc;
 $form-background-focus: 1px solid #999;
 $form-border-focus:  1px solid #ccc;
+$form-text-color: rgb(68, 68, 68);
 
 
 .form-elements {
@@ -25,9 +27,9 @@ $form-border-focus:  1px solid #ccc;
 	/* appearance: none; */
 	height: 2.5em;
 	line-height: 2.5em;
+	color: $form-text-color;
 	border: $form-border;
 	transition: border-color .3s;
-	font-size: $form-font-size;
 	border-radius: $rounded-corners;
 }
 
@@ -35,6 +37,7 @@ $form-border-focus:  1px solid #ccc;
 	height: 100px;
 	font-family: $font-stack;
 	padding-top: 3px;
+	color: $form-text-color;
 }
 
 .form-elements input:not(.btn):focus,
@@ -63,7 +66,7 @@ $form-border-focus:  1px solid #ccc;
 	-webkit-appearance: none;
 	font-size: $form-font-size;
 	height: 2.5em;
-	line-height: 2.3em;
+	line-height: 1.3em;
 }
 
 .form-check-radio input[type=checkbox],
@@ -93,6 +96,7 @@ $form-border-focus:  1px solid #ccc;
 .form-elements select {
 	line-height: 20px;
 	margin-bottom: 0px;
+	color: $form-text-color;
 }
 
 /* Condensed */
@@ -105,7 +109,7 @@ $form-border-focus:  1px solid #ccc;
 .form-condensed .form-elements label,
 .form-condensed .form-elements select,
 .form-condensed .form-elements textarea {
-	padding: 2px;
+	padding: 2px 2px 2px 15px;
 }
 
 .form-condensed .grid.form-elements > div {
@@ -285,7 +289,7 @@ fieldset[disabled] .form-elements .btn:hover,
 	margin-left: 6px;
 }
 
-.toggle-check input[type=checkbox] {
+.toggle-check input {
 	display: none;
 }
 
@@ -334,18 +338,18 @@ fieldset[disabled] .form-elements .btn:hover,
     content: "";
 }
 
-.toggle-check input[type=checkbox]:checked ~ .toggle-check-box:before {
+.toggle-check input:checked ~ .toggle-check-box:before {
     background-color: $primary-color;
     transition: background 0.2s;
 }
 
-.toggle-check input[type=checkbox]:checked ~ .toggle-check-box:after {
+.toggle-check input:checked ~ .toggle-check-box:after {
     border-radius: 100%;
     transition: right 0.2s;
 	right: 1px;
 }
 
-.toggle-check input[type=checkbox]:disabled ~ .toggle-check-box {
+.toggle-check input:disabled ~ .toggle-check-box {
     opacity: .7;
 	cursor: not-allowed;
 }
@@ -376,16 +380,17 @@ fieldset[disabled] .form-elements .btn:hover,
 	position: absolute;
 	width: 20px;
 	height: 80%;
-	border-left: 1px solid rgba(150,150,150,.1);
+	border-left: 1px solid rgba(150,150,150,.5);
 	top: 10%;
 	right: 12px;
+	pointer-events: none;
 }
 
 .select-element .select-arrow:after {
 	content: "";
 	width: 0;
 	height: 0;
-	border-top: 5px solid rgba(150,150,150,.8);
+	border-top: 5px solid rgba(150,150,150,.9);
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	position: absolute;
@@ -433,11 +438,11 @@ fieldset[disabled] .form-elements .btn:hover,
 	
 	/* Inline */
 	.form-inline.form-elements input:not(.btn),
-	.form-inline.form-elements label,
+	.form-inline.form-elements input,
 	.form-inline.form-elements select {
 		float: none;
 		width: 100%;
-		margin: 0 4px 0px 0px;
+		margin: 0 0 10px 0px;
 	}
 	
 	.form-inline .btn.form-inline-btn {

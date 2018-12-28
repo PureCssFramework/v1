@@ -3,6 +3,12 @@ $grid-gutter: -12px;
 $grid-padding: 12px;
 $grid-width:  calc(100% + 24px);
 
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .flex-grid  {
 	display: flex;
     flex-flow: row wrap;

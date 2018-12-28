@@ -1,15 +1,15 @@
 
-
 .tbl {
 	width: 100%;
 	max-width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
+	font-size: $font-size;
 }
 
 .tbl td,
-.tbl th {
-	padding: 6px;
+.tbl th { 
+	padding: 14px;
 	text-align: left;
 	/* background-color: #fff; */
 	border-bottom: 1px solid rgba(150,150,150,.1);
@@ -67,6 +67,29 @@
 	background-color: #eee;
 }
 
+.tbl td align-t,
+.tbl th align-t {
+	vertical-align: top;
+}
+
+.tbl td align-m,
+.tbl th align-m {
+	vertical-align: middle;
+}
+
+.tbl td align-b,
+.tbl th align-b {
+	vertical-align: bottom;
+}
+
+table td h1,
+table td h2 
+table td h3
+table td h4
+table td h5
+table td h6 {
+	color: green;
+}
 
 @media all and (max-width: 1024px) {
 	
@@ -81,7 +104,18 @@
 		white-space: nowrap;
 	}
 
-
-
-    
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+	
+	.tbl-responsive {
+		background-color: rgba(150,150,150,.3);
+	}
+
+	.tbl.bordered {
+		background-color: transparent;
+	}
+
+ 
+}
+
