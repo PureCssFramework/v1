@@ -91,6 +91,7 @@ button, textarea, input, select, label,
 button:focus, textarea:focus, input:focus, select:focus, label:focus { outline: none; -webkit-tap-highlight-color: transparent; }
 /*** Global Helpers END ***/
 
+
 body {
 	font-size: $font-size;
 	font-family: $font-stack;
@@ -99,7 +100,6 @@ body {
 	background-color: $bg-color;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
-    background: green;
 }
 
 table { 
